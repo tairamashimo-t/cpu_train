@@ -1,0 +1,3 @@
+C:/Pico/cpu_train/build/pioasm/CMakeFiles/pioasm.dir
+C:/Pico/cpu_train/build/pioasm/CMakeFiles/edit_cache.dir
+C:/Pico/cpu_train/build/pioasm/CMakeFiles/rebuild_cache.dir
