@@ -295,10 +295,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.07/bin/arm-none-eabi-g++.exe"
 		},
 		{
@@ -423,10 +423,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.07/bin/arm-none-eabi-gcc.exe"
 		},
 		{
@@ -1467,7 +1467,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : " C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs"
+			"value" : " C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs C:/Pico/pico-sdk/src/rp2_common/cmsis C:/Pico/pico-sdk/src/rp2040/hardware_regs"
 		},
 		{
 			"name" : "PICO_DOXYGEN_PATHS",
