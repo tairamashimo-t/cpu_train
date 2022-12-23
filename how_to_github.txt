@@ -1,0 +1,40 @@
+--github操作--
+    - githubでレポジトリを作る
+    - codeタブからhttpsのurlを取得する
+----
+
+--ターミナル操作--
+    - ローカルにクローンを作る。作業するディレクトリで、
+      git clone ↑のurl
+----
+
+--更新--
+    - version管理の対象にする(stageする)
+    　git add ファイル名
+    - コミットする(ローカルで変更内容を保存する)
+    　git commit -m "コメント"
+    - github上に変更を反映する
+    　git push origin main
+----
+
+--branchの切り替え--
+    - 新たにブランチを作る
+    　git branch ブランチ名
+    - ブランチを切り替える
+    　git checkout ブランチ名
+
+    - 上を一括で実施
+    　git checout -b ブランチ名
+----
+
+--他人が変更した内容をローカルに反映させる--
+    - git pull
+----
+
+--ブランチの内容をmainに反映させる--
+    - 反映先に移動する
+    　git checkout main
+    - 反映元からマージする
+    　git merge ブランチ名
+    - github上に変更を反映する
+    　git push origin main
