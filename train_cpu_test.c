@@ -28,6 +28,8 @@ void out(int* index_1);
 void get_register_index(int* index, int n);
 void get_mediate(int* store_itob, int n);
 
+void decode(int* index_1, int* index_2, int* store, bool* flag);
+
 int sProgram_counter = 0;
 int sGeneral_register[5] = {0, 0, 0, 0, 0};
 int sStatus_register[2] = {0, 0};
@@ -70,53 +72,13 @@ int main(){
         }
     }
     */
-
     check_input_start();
-
     store_command();
-
     program_display();
-    
-    
     while(!end_flag){
-
         fetch();
-
-        // decorder
-        switch (instruction_register.opcode[1]){
-            case 0:
-                mov(&register_index_1, &store_itob);
-                break;
-            case 1: //add // 未使用
-
-                break;
-            case 2:
-                sub(&register_index_1, &register_index_2);
-                break;
-            case 3:
-                mul(&register_index_1, &register_index_2);
-                break;
-            case 4:
-                cmp(&register_index_1, &register_index_2);
-                break;
-            case 5: //bne // 未使用
-                
-                break;
-            case 6:
-                blt(&store_itob);
-                break;
-            case 7:
-                end(&end_flag);
-                break;
-            case 8:
-                b(&store_itob);
-                break;
-            case 9:
-                out(&register_index_1);
-                break;
-        }
+        decode(&register_index_1, &register_index_2, &store_itob, &end_flag);
     }
-
 }
 
 
@@ -380,5 +342,40 @@ void get_register_index(int* index, int n){
     printf("\tprogram_counter:%d\n", sProgram_counter);
     printf("out done\n");
     *index_1 = 0;
+ }
+
+ void decode(int* index_1, int* index_2, int* store, bool* flag){
+    switch (instruction_register.opcode[1]){
+        case 0:
+            mov(index_1, store);
+            break;
+        case 1: //add // 未使用
+
+            break;
+        case 2:
+            sub(index_1, index_2);
+            break;
+        case 3:
+            mul(index_1, index_2);
+            break;
+        case 4:
+            cmp(index_1, index_2);
+            break;
+        case 5: //bne // 未使用
+            
+            break;
+        case 6:
+            blt(store);
+            break;
+        case 7:
+            end(flag);
+            break;
+        case 8:
+            b(store);
+            break;
+        case 9:
+            out(index_1);
+            break;
+    }
  }
  

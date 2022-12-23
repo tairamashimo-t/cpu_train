@@ -1089,9 +1089,9 @@ Discarded input sections
                 0x00000000        0x8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_65.1
                 0x00000000        0xc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .text          0x00000000        0x0 C:\Users\a235917\AppData\Local\Temp\ccWjuVOb.o
- .data          0x00000000        0x0 C:\Users\a235917\AppData\Local\Temp\ccWjuVOb.o
- .bss           0x00000000        0x0 C:\Users\a235917\AppData\Local\Temp\ccWjuVOb.o
+ .text          0x00000000        0x0 C:\Users\a235917\AppData\Local\Temp\ccTm52ss.o
+ .data          0x00000000        0x0 C:\Users\a235917\AppData\Local\Temp\ccTm52ss.o
+ .bss           0x00000000        0x0 C:\Users\a235917\AppData\Local\Temp\ccTm52ss.o
  .data          0x00000000        0x0 c:/progra~2/gnuarm~1/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 c:/progra~2/gnuarm~1/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .text          0x00000000        0x0 c:/progra~2/gnuarm~1/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-calloc.o)
@@ -1307,11 +1307,11 @@ LOAD c:/progra~2/gnuarm~1/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../
 .boot2          0x10000000      0x100
                 0x10000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 C:\Users\a235917\AppData\Local\Temp\ccWjuVOb.o
+ .boot2         0x10000000      0x100 C:\Users\a235917\AppData\Local\Temp\ccTm52ss.o
                 0x10000100                __boot2_end__ = .
                 0x00000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x10000100     0x5608
+.text           0x10000100     0x5610
                 0x10000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x10000100       0xd4 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1404,418 +1404,421 @@ LOAD c:/progra~2/gnuarm~1/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../
                 0x10000a14                b
  .text.out      0x10000a58      0x184 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
                 0x10000a58                out
- .text.main     0x10000bdc       0xc4 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
-                0x10000bdc                main
+ .text.decode   0x10000bdc       0x54 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
+                0x10000bdc                decode
+ .text.main     0x10000c30       0x74 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
+                0x10000c30                main
  .text.gpio_set_function
-                0x10000ca0       0x30 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x10000ca0                gpio_set_function
+                0x10000ca4       0x30 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x10000ca4                gpio_set_function
  .text.gpio_init
-                0x10000cd0       0x16 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x10000cd0                gpio_init
- *fill*         0x10000ce6        0x2 
+                0x10000cd4       0x16 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x10000cd4                gpio_init
+ *fill*         0x10000cea        0x2 
  .text.hw_claim_lock
-                0x10000ce8       0x18 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x10000ce8                hw_claim_lock
+                0x10000cec       0x18 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x10000cec                hw_claim_lock
  .text.hw_claim_unlock
-                0x10000d00       0x14 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x10000d00                hw_claim_unlock
+                0x10000d04       0x14 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x10000d04                hw_claim_unlock
  .text.hw_claim_or_assert
-                0x10000d14       0x32 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x10000d14                hw_claim_or_assert
- *fill*         0x10000d46        0x2 
+                0x10000d18       0x32 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x10000d18                hw_claim_or_assert
+ *fill*         0x10000d4a        0x2 
  .text.running_on_fpga
-                0x10000d48       0x14 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x10000d48                running_on_fpga
+                0x10000d4c       0x14 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x10000d4c                running_on_fpga
  .text.spin_locks_reset
-                0x10000d5c       0x20 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x10000d5c                spin_locks_reset
+                0x10000d60       0x20 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x10000d60                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x10000d7c       0x1c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x10000d7c                next_striped_spin_lock_num
+                0x10000d80       0x1c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x10000d80                next_striped_spin_lock_num
  .text.set_raw_irq_handler_and_unlock
-                0x10000d98       0x28 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000d9c       0x28 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .text.make_branch
-                0x10000dc0       0x48 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000dc4       0x48 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .text.insert_branch_and_link
-                0x10000e08       0x40 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000e0c       0x40 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .text.irq_is_enabled
-                0x10000e48       0x18 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000e48                irq_is_enabled
+                0x10000e4c       0x18 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000e4c                irq_is_enabled
  .text.irq_set_mask_enabled
-                0x10000e60       0x20 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000e60                irq_set_mask_enabled
+                0x10000e64       0x20 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000e64                irq_set_mask_enabled
  .text.irq_set_enabled
-                0x10000e80        0xe CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000e80                irq_set_enabled
- *fill*         0x10000e8e        0x2 
+                0x10000e84        0xe CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000e84                irq_set_enabled
+ *fill*         0x10000e92        0x2 
  .text.irq_get_vtable_handler
-                0x10000e90       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000e90                irq_get_vtable_handler
+                0x10000e94       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000e94                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x10000ea0       0x54 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000ea0                irq_set_exclusive_handler
+                0x10000ea4       0x54 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000ea4                irq_set_exclusive_handler
  .text.irq_remove_handler
-                0x10000ef4      0x1a8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000ef4                irq_remove_handler
+                0x10000ef8      0x1a8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000ef8                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x1000109c       0xf0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x1000109c                irq_add_tail_to_free_list
+                0x100010a0       0xf0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x100010a0                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x1000118c       0x1c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x1000118c                irq_init_priorities
+                0x10001190       0x1c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10001190                irq_init_priorities
  .text.lock_init
-                0x100011a8       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x100011a8                lock_init
+                0x100011ac       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x100011ac                lock_init
  .text.alarm_pool_post_alloc_init
-                0x100011b8       0x40 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x100011bc       0x40 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.timer_pool_entry_comparator
-                0x100011f8       0x7c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x100011f8                timer_pool_entry_comparator
+                0x100011fc       0x7c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x100011fc                timer_pool_entry_comparator
  .text.ph_add_child_node
-                0x10001274       0xa4 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001278       0xa4 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.ph_merge_nodes
-                0x10001318       0x3e CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10001356        0x2 
+                0x1000131c       0x3e CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x1000135a        0x2 
  .text.add_alarm_under_lock
-                0x10001358      0x174 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x1000135c      0x174 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x100014cc      0x328 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x100014d0      0x328 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x100017f4       0x38 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x100017f4                alarm_pool_init_default
+                0x100017f8       0x38 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x100017f8                alarm_pool_init_default
  .text.hardware_alarm_irq_handler
-                0x1000182c       0x8c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001830       0x8c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x100018b8       0x18 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x100018b8                hardware_alarm_claim
+                0x100018bc       0x18 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x100018bc                hardware_alarm_claim
  .text.time_us_64
-                0x100018d0       0x18 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x100018d0                time_us_64
+                0x100018d4       0x18 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x100018d4                time_us_64
  .text.hardware_alarm_set_callback
-                0x100018e8       0x90 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x100018e8                hardware_alarm_set_callback
+                0x100018ec       0x90 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x100018ec                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x10001978       0xe8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001978                hardware_alarm_set_target
+                0x1000197c       0xe8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x1000197c                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x10001a60       0x40 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001a60                hardware_alarm_cancel
+                0x10001a64       0x40 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001a64                hardware_alarm_cancel
  .text.ph_add_child_node
-                0x10001aa0       0xa4 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001aa4       0xa4 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_merge_nodes
-                0x10001b44       0x3e CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
- *fill*         0x10001b82        0x2 
+                0x10001b48       0x3e CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ *fill*         0x10001b86        0x2 
  .text.ph_clear
-                0x10001b84       0x70 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001b84                ph_clear
+                0x10001b88       0x70 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001b88                ph_clear
  .text.ph_post_alloc_init
-                0x10001bf4        0xe CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001bf4                ph_post_alloc_init
- *fill*         0x10001c02        0x2 
+                0x10001bf8        0xe CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001bf8                ph_post_alloc_init
+ *fill*         0x10001c06        0x2 
  .text.ph_merge_two_pass
-                0x10001c04       0xa8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001c04                ph_merge_two_pass
+                0x10001c08       0xa8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001c08                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x10001cac      0x108 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001cb0      0x108 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x10001db4       0x14 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001db4                ph_remove_head
+                0x10001db8       0x14 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001db8                ph_remove_head
  .text.ph_remove_and_free_node
-                0x10001dc8       0xf8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001dc8                ph_remove_and_free_node
+                0x10001dcc       0xf8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001dcc                ph_remove_and_free_node
  .text.mutex_init
-                0x10001ec0       0x1a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x10001ec0                mutex_init
+                0x10001ec4       0x1a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x10001ec4                mutex_init
  .text.recursive_mutex_init
-                0x10001eda       0x1e CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x10001eda                recursive_mutex_init
+                0x10001ede       0x1e CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x10001ede                recursive_mutex_init
  .text.uart_set_baudrate
-                0x10001ef8       0x5c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x10001ef8                uart_set_baudrate
+                0x10001efc       0x5c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x10001efc                uart_set_baudrate
  .text.uart_set_translate_crlf
-                0x10001f54       0x28 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x10001f54                uart_set_translate_crlf
+                0x10001f58       0x28 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x10001f58                uart_set_translate_crlf
  .text.uart_init
-                0x10001f7c       0x80 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x10001f7c                uart_init
- .text._exit    0x10001ffc        0x4 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001ffc                _exit
- .text.exit     0x10002000        0x6 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10002000                exit
- *fill*         0x10002006        0x2 
+                0x10001f80       0x80 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x10001f80                uart_init
+ .text._exit    0x10002000        0x4 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10002000                _exit
+ .text.exit     0x10002004        0x6 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10002004                exit
+ *fill*         0x1000200a        0x2 
  .text.__assert_func
-                0x10002008       0x3c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10002008                __assert_func
+                0x1000200c       0x3c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x1000200c                __assert_func
  .text.runtime_init
-                0x10002044       0xf8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10002044                runtime_init
- .text.panic    0x1000213c       0x30 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x1000213c                panic
+                0x10002048       0xf8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10002048                runtime_init
+ .text.panic    0x10002140       0x30 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10002140                panic
  .text.clock_configure
-                0x1000216c      0x104 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x1000216c                clock_configure
+                0x10002170      0x104 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10002170                clock_configure
  .text.clocks_init
-                0x10002270      0x100 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10002270                clocks_init
+                0x10002274      0x100 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10002274                clocks_init
  .text.clock_get_hz
-                0x10002370        0xc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10002370                clock_get_hz
+                0x10002374        0xc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10002374                clock_get_hz
  .text.pll_init
-                0x1000237c      0x140 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x1000237c                pll_init
+                0x10002380      0x140 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x10002380                pll_init
  .text.watchdog_start_tick
-                0x100024bc       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x100024bc                watchdog_start_tick
+                0x100024c0       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x100024c0                watchdog_start_tick
  .text.xosc_init
-                0x100024cc       0x28 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x100024cc                xosc_init
+                0x100024d0       0x28 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x100024d0                xosc_init
  .text._out_buffer
-                0x100024f4        0x8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100024f8        0x8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_null
-                0x100024fc        0x2 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10002500        0x2 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_fct
-                0x100024fe        0xe CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._atoi    0x1000250c       0x24 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10002502        0xe CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._atoi    0x10002510       0x24 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_rev
-                0x10002530       0xae CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10002534       0xae CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_format
-                0x100025de      0x112 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100025e2      0x112 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_long
-                0x100026f0       0xbc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100026f4       0xbc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_long_long
-                0x100027ac       0xe2 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x1000288e        0x2 
- .text._etoa    0x10002890      0x414 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._ftoa    0x10002ca4      0x354 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100027b0       0xe2 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x10002892        0x2 
+ .text._etoa    0x10002894      0x414 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._ftoa    0x10002ca8      0x354 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._vsnprintf
-                0x10002ff8      0x624 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10002ffc      0x624 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.__wrap_sprintf
-                0x1000361c       0x28 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x1000361c                __wrap_sprintf
+                0x10003620       0x28 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10003620                __wrap_sprintf
  .text.vfctprintf
-                0x10003644       0x20 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x10003644                vfctprintf
- .text          0x10003664       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x10003648       0x20 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10003648                vfctprintf
+ .text          0x10003668       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x10003674       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10003674                rom_func_lookup
+                0x10003678       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10003678                rom_func_lookup
  .text.rom_data_lookup
-                0x10003684       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10003684                rom_data_lookup
+                0x10003688       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10003688                rom_data_lookup
  .text.rom_funcs_lookup
-                0x10003694       0x36 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10003694                rom_funcs_lookup
- *fill*         0x100036ca        0x2 
+                0x10003698       0x36 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10003698                rom_funcs_lookup
+ *fill*         0x100036ce        0x2 
  .text.__wrap___aeabi_idiv
-                0x100036cc       0x50 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x100036cc                __wrap___aeabi_idivmod
-                0x100036cc                divmod_s32s32
-                0x100036cc                div_s32s32
-                0x100036cc                __wrap___aeabi_idiv
-                0x100036d4                divmod_s32s32_unsafe
-                0x10003700                divmod_s32s32_savestate
+                0x100036d0       0x50 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x100036d0                __wrap___aeabi_idivmod
+                0x100036d0                divmod_s32s32
+                0x100036d0                div_s32s32
+                0x100036d0                __wrap___aeabi_idiv
+                0x100036d8                divmod_s32s32_unsafe
+                0x10003704                divmod_s32s32_savestate
  .text.__wrap___aeabi_uidiv
-                0x1000371c       0x4c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x1000371c                __wrap___aeabi_uidiv
-                0x1000371c                __wrap___aeabi_uidivmod
-                0x1000371c                div_u32u32
-                0x1000371c                divmod_u32u32
-                0x10003724                divmod_u32u32_unsafe
-                0x1000374c                divmod_u32u32_savestate
+                0x10003720       0x4c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x10003720                __wrap___aeabi_uidiv
+                0x10003720                __wrap___aeabi_uidivmod
+                0x10003720                div_u32u32
+                0x10003720                divmod_u32u32
+                0x10003728                divmod_u32u32_unsafe
+                0x10003750                divmod_u32u32_savestate
  .text.__wrap___aeabi_ldiv
-                0x10003768      0x434 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x10003768                div_s64s64
-                0x10003768                divmod_s64s64
-                0x10003768                __wrap___aeabi_ldivmod
-                0x100037a0                divmod_u64u64
-                0x100037a0                div_u64u64
-                0x100037a0                __wrap___aeabi_uldivmod
-                0x100037b0                divmod_u64u64_savestate
-                0x100037d8                divmod_s64s64_unsafe
-                0x10003860                divmod_u64u64_unsafe
+                0x1000376c      0x434 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x1000376c                div_s64s64
+                0x1000376c                divmod_s64s64
+                0x1000376c                __wrap___aeabi_ldivmod
+                0x100037a4                divmod_u64u64
+                0x100037a4                div_u64u64
+                0x100037a4                __wrap___aeabi_uldivmod
+                0x100037b4                divmod_u64u64_savestate
+                0x100037dc                divmod_s64s64_unsafe
+                0x10003864                divmod_u64u64_unsafe
  .text.__wrap___aeabi_darithmetic
-                0x10003b9c       0x80 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003b9c                __wrap___aeabi_drsub
-                0x10003ba2                __wrap___aeabi_dsub
-                0x10003bb4                __wrap___aeabi_dadd
-                0x10003bc6                __wrap___aeabi_ddiv
-                0x10003c02                __wrap___aeabi_dmul
+                0x10003ba0       0x80 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003ba0                __wrap___aeabi_drsub
+                0x10003ba6                __wrap___aeabi_dsub
+                0x10003bb8                __wrap___aeabi_dadd
+                0x10003bca                __wrap___aeabi_ddiv
+                0x10003c06                __wrap___aeabi_dmul
  .text.__wrap___aeabi_cdcmple
-                0x10003c1c       0x6c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003c1c                __wrap___aeabi_cdrcmple
-                0x10003c2c                __wrap___aeabi_cdcmpeq
-                0x10003c2c                __wrap___aeabi_cdcmple
+                0x10003c20       0x6c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003c20                __wrap___aeabi_cdrcmple
+                0x10003c30                __wrap___aeabi_cdcmpeq
+                0x10003c30                __wrap___aeabi_cdcmple
  .text.__wrap___aeabi_dcmpeq
-                0x10003c88       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003c88                __wrap___aeabi_dcmpeq
+                0x10003c8c       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003c8c                __wrap___aeabi_dcmpeq
  .text.__wrap___aeabi_dcmplt
-                0x10003c98        0xc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003c98                __wrap___aeabi_dcmplt
+                0x10003c9c        0xc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003c9c                __wrap___aeabi_dcmplt
  .text.__wrap___aeabi_dcmple
-                0x10003ca4       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003ca4                __wrap___aeabi_dcmple
+                0x10003ca8       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003ca8                __wrap___aeabi_dcmple
  .text.__wrap___aeabi_dcmpge
-                0x10003cb4       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003cb4                __wrap___aeabi_dcmpge
+                0x10003cb8       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003cb8                __wrap___aeabi_dcmpge
  .text.__wrap___aeabi_dcmpgt
-                0x10003cc4        0xa CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003cc4                __wrap___aeabi_dcmpgt
+                0x10003cc8        0xa CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003cc8                __wrap___aeabi_dcmpgt
  .text.__wrap___aeabi_dcmpun
-                0x10003cce       0x1c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003cce                __wrap___aeabi_dcmpun
- *fill*         0x10003cea        0x2 
+                0x10003cd2       0x1c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003cd2                __wrap___aeabi_dcmpun
+ *fill*         0x10003cee        0x2 
  .text.__wrap___aeabi_i2d
-                0x10003cec       0x38 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003cec                __wrap___aeabi_ui2d
-                0x10003cf4                __wrap___aeabi_i2d
+                0x10003cf0       0x38 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003cf0                __wrap___aeabi_ui2d
+                0x10003cf8                __wrap___aeabi_i2d
  .text.__wrap___aeabi_d2iz
-                0x10003d24       0x48 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003d24                double2int_z
-                0x10003d24                __wrap___aeabi_d2iz
+                0x10003d28       0x48 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003d28                double2int_z
+                0x10003d28                __wrap___aeabi_d2iz
  .text.__wrap___aeabi_d2uiz
-                0x10003d6c       0x18 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003d6c                __wrap___aeabi_d2uiz
-                0x10003d6c                double2uint
+                0x10003d70       0x18 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003d70                __wrap___aeabi_d2uiz
+                0x10003d70                double2uint
  .text.__wrap_exp
-                0x10003d84       0x18 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003d84                __wrap_exp
+                0x10003d88       0x18 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003d88                __wrap_exp
  .text.__wrap_log
-                0x10003d9c       0x18 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003d9c                __wrap_log
+                0x10003da0       0x18 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003da0                __wrap_log
  .text.__aeabi_double_init
-                0x10003db4       0xc8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x10003db4                __aeabi_double_init
+                0x10003db8       0xc8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x10003db8                __aeabi_double_init
  .text.dpow_int2
-                0x10003e7c       0x2c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
- .text.dpow_1   0x10003ea8      0x2a8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
- .text.dpow_0   0x10004150      0x1a0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+                0x10003e80       0x2c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+ .text.dpow_1   0x10003eac      0x2a8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+ .text.dpow_0   0x10004154      0x1a0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
  .text.__wrap_ldexp
-                0x100042f0       0x50 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
-                0x100042f0                __wrap_ldexp
+                0x100042f4       0x50 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+                0x100042f4                __wrap_ldexp
  .text.__wrap_round
-                0x10004340       0x9c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
-                0x10004340                __wrap_round
+                0x10004344       0x9c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+                0x10004344                __wrap_round
  .text.__wrap_exp2
-                0x100043dc       0xcc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
-                0x100043dc                __wrap_exp2
+                0x100043e0       0xcc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+                0x100043e0                __wrap_exp2
  .text.__wrap_pow
-                0x100044a8      0x37c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
-                0x100044a8                __wrap_pow
+                0x100044ac      0x37c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+                0x100044ac                __wrap_pow
  .text.double_table_shim_on_use_helper
-                0x10004824       0x34 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004824                double_table_shim_on_use_helper
+                0x10004828       0x34 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10004828                double_table_shim_on_use_helper
  .text.__wrap___aeabi_dsub
-                0x10004858       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004858                drsub_shim
-                0x1000485e                dsub_shim
+                0x1000485c       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x1000485c                drsub_shim
+                0x10004862                dsub_shim
  .text.dadd_shim
-                0x10004868      0x15c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004868                dadd_shim
+                0x1000486c      0x15c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x1000486c                dadd_shim
  .text.dmul_shim
-                0x100049c4      0x15c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x100049c4                dmul_shim
+                0x100049c8      0x15c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x100049c8                dmul_shim
  .text.ddiv_shim
-                0x10004b20      0x1b0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004b20                ddiv_shim
+                0x10004b24      0x1b0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10004b24                ddiv_shim
  .text.double2uint_shim
-                0x10004cd0        0xe CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004cd0                double2uint_shim
-                0x10004cd2                double2ufix_shim
- *fill*         0x10004cde        0x2 
+                0x10004cd4        0xe CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10004cd4                double2uint_shim
+                0x10004cd6                double2ufix_shim
+ *fill*         0x10004ce2        0x2 
  .text.double2uint64_shim
-                0x10004ce0       0x70 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004ce0                double2uint64_shim
-                0x10004ce2                double2ufix64_shim
-                0x10004d02                d2fix_a
+                0x10004ce4       0x70 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10004ce4                double2uint64_shim
+                0x10004ce6                double2ufix64_shim
+                0x10004d06                d2fix_a
  .text.x2double_shims
-                0x10004d50       0x90 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004d50                uint2double_shim
-                0x10004d52                ufix2double_shim
-                0x10004d58                int2double_shim
-                0x10004d5a                fix2double_shim
-                0x10004d60                uint642double_shim
-                0x10004d62                ufix642double_shim
-                0x10004d68                int642double_shim
-                0x10004d6a                fix642double_shim
+                0x10004d54       0x90 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10004d54                uint2double_shim
+                0x10004d56                ufix2double_shim
+                0x10004d5c                int2double_shim
+                0x10004d5e                fix2double_shim
+                0x10004d64                uint642double_shim
+                0x10004d66                ufix642double_shim
+                0x10004d6c                int642double_shim
+                0x10004d6e                fix642double_shim
  .text.dunpacks
-                0x10004de0       0x3c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004de0                dunpacks
- .text.dreduce  0x10004e1c       0x82 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004e1c                dreduce
- *fill*         0x10004e9e        0x2 
+                0x10004de4       0x3c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10004de4                dunpacks
+ .text.dreduce  0x10004e20       0x82 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10004e20                dreduce
+ *fill*         0x10004ea2        0x2 
  .text.dexp_guts
-                0x10004ea0      0x268 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004ea0                dexp_shim
-                0x10004f3c                dln_shim
+                0x10004ea4      0x268 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10004ea4                dexp_shim
+                0x10004f40                dln_shim
  .text.__aeabi_float_init
-                0x10005108       0xfc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x10005108                __aeabi_float_init
+                0x1000510c       0xfc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x1000510c                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x10005204       0x34 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x10005204                float_table_shim_on_use_helper
- .text          0x10005238       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10005238                __aeabi_mem_init
- .text.memset   0x10005248        0xc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10005248                __wrap_memset
- .text.memcpy   0x10005254        0xc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10005254                __wrap_memcpy
-                0x10005254                __wrap___aeabi_memcpy
+                0x10005208       0x34 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x10005208                float_table_shim_on_use_helper
+ .text          0x1000523c       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x1000523c                __aeabi_mem_init
+ .text.memset   0x1000524c        0xc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x1000524c                __wrap_memset
+ .text.memcpy   0x10005258        0xc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x10005258                __wrap_memcpy
+                0x10005258                __wrap___aeabi_memcpy
  .text.stdio_out_chars_no_crlf
-                0x10005260        0xe CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x1000526e        0x2 
+                0x10005264        0xe CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x10005272        0x2 
  .text.stdio_out_chars_crlf
-                0x10005270       0x80 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10005274       0x80 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_stack_buffer_flush
-                0x100052f0       0x44 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100052f4       0x44 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_buffered_printer
-                0x10005334       0x20 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10005338       0x20 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdout_serialize_begin
-                0x10005354       0x30 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10005354                stdout_serialize_begin
+                0x10005358       0x30 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10005358                stdout_serialize_begin
  .text.stdout_serialize_end
-                0x10005384       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10005384                stdout_serialize_end
+                0x10005388       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10005388                stdout_serialize_end
  .text.stdio_put_string
-                0x10005394       0x98 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10005398       0x98 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x1000542c       0x1c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x1000542c                __wrap_putchar
+                0x10005430       0x1c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10005430                __wrap_putchar
  .text.stdio_set_driver_enabled
-                0x10005448       0x2c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10005448                stdio_set_driver_enabled
+                0x1000544c       0x2c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x1000544c                stdio_set_driver_enabled
  .text.stdio_flush
-                0x10005474       0x20 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10005474                stdio_flush
+                0x10005478       0x20 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10005478                stdio_flush
  .text.__wrap_puts
-                0x10005494       0x1e CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10005494                __wrap_puts
- *fill*         0x100054b2        0x2 
+                0x10005498       0x1e CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10005498                __wrap_puts
+ *fill*         0x100054b6        0x2 
  .text.__wrap_vprintf
-                0x100054b4       0x44 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x100054b4                __wrap_vprintf
+                0x100054b8       0x44 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100054b8                __wrap_vprintf
  .text.__wrap_printf
-                0x100054f8       0x18 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x100054f8                __wrap_printf
+                0x100054fc       0x18 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100054fc                __wrap_printf
  .text.stdio_init_all
-                0x10005510        0x8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10005510                stdio_init_all
+                0x10005514        0x8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10005514                stdio_init_all
  .text.stdio_uart_out_chars
-                0x10005518       0x74 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x1000551c       0x74 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_in_chars
-                0x1000558c       0x58 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x1000558c                stdio_uart_in_chars
+                0x10005590       0x58 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10005590                stdio_uart_in_chars
  .text.stdio_uart_init_full
-                0x100055e4       0x3c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x100055e4                stdio_uart_init_full
+                0x100055e8       0x3c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x100055e8                stdio_uart_init_full
  .text.stdio_uart_init
-                0x10005620       0x28 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x10005620                stdio_uart_init
- .text.strlen   0x10005648       0x5c c:/progra~2/gnuarm~1/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-strlen-stub.o)
-                0x10005648                strlen
+                0x10005624       0x28 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10005624                stdio_uart_init
+ .text.strlen   0x1000564c       0x5c c:/progra~2/gnuarm~1/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-strlen-stub.o)
+                0x1000564c                strlen
  *(.fini)
- .fini          0x100056a4        0x4 c:/progra~2/gnuarm~1/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
-                0x100056a4                _fini
- .fini.__stub   0x100056a8       0x60 linker stubs
+ .fini          0x100056a8        0x4 c:/progra~2/gnuarm~1/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x100056a8                _fini
+ *fill*         0x100056ac        0x4 
+ .fini.__stub   0x100056b0       0x60 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -1827,266 +1830,267 @@ LOAD c:/progra~2/gnuarm~1/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x10005708        0x0 c:/progra~2/gnuarm~1/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x10005708                . = ALIGN (0x4)
+ .eh_frame      0x10005710        0x0 c:/progra~2/gnuarm~1/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x10005710                . = ALIGN (0x4)
 
-.glue_7         0x10005708        0x0
- .glue_7        0x10005708        0x0 linker stubs
+.glue_7         0x10005710        0x0
+ .glue_7        0x10005710        0x0 linker stubs
 
-.glue_7t        0x10005708        0x0
- .glue_7t       0x10005708        0x0 linker stubs
+.glue_7t        0x10005710        0x0
+ .glue_7t       0x10005710        0x0 linker stubs
 
-.vfp11_veneer   0x10005708        0x0
- .vfp11_veneer  0x10005708        0x0 linker stubs
+.vfp11_veneer   0x10005710        0x0
+ .vfp11_veneer  0x10005710        0x0 linker stubs
 
-.v4_bx          0x10005708        0x0
- .v4_bx         0x10005708        0x0 linker stubs
+.v4_bx          0x10005710        0x0
+ .v4_bx         0x10005710        0x0 linker stubs
 
-.iplt           0x10005708        0x0
- .iplt          0x10005708        0x0 c:/progra~2/gnuarm~1/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x10005710        0x0
+ .iplt          0x10005710        0x0 c:/progra~2/gnuarm~1/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x10005708      0xf94
+.rodata         0x10005710      0xf94
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.check_input_start.str1.4
-                0x10005708       0x2d CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
- *fill*         0x10005735        0x3 
+                0x10005710       0x2d CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
+ *fill*         0x1000573d        0x3 
  .rodata.store_command.str1.4
-                0x10005738       0x11 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
- *fill*         0x10005749        0x3 
+                0x10005740       0x11 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
+ *fill*         0x10005751        0x3 
  .rodata.program_display.str1.4
-                0x1000574c       0x46 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
- *fill*         0x10005792        0x2 
+                0x10005754       0x46 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
+ *fill*         0x1000579a        0x2 
  .rodata.mov.str1.4
-                0x10005794       0x3d CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
- *fill*         0x100057d1        0x3 
+                0x1000579c       0x3d CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
+ *fill*         0x100057d9        0x3 
  .rodata.sub.str1.4
-                0x100057d4       0x35 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
- *fill*         0x10005809        0x3 
+                0x100057dc       0x35 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
+ *fill*         0x10005811        0x3 
  .rodata.mul.str1.4
-                0x1000580c       0x23 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
- *fill*         0x1000582f        0x1 
+                0x10005814       0x23 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
+ *fill*         0x10005837        0x1 
  .rodata.cmp.str1.4
-                0x10005830       0x4d CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
- *fill*         0x1000587d        0x3 
+                0x10005838       0x4d CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
+ *fill*         0x10005885        0x3 
  .rodata.blt.str1.4
-                0x10005880       0x11 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
- *fill*         0x10005891        0x3 
+                0x10005888       0x11 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
+ *fill*         0x10005899        0x3 
  .rodata.b.str1.4
-                0x10005894        0xb CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
- *fill*         0x1000589f        0x1 
+                0x1000589c        0xb CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
+ *fill*         0x100058a7        0x1 
  .rodata.out.str1.4
-                0x100058a0       0x11 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
- *fill*         0x100058b1        0x3 
- .rodata.main   0x100058b4       0x28 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
+                0x100058a8       0x11 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
+ *fill*         0x100058b9        0x3 
+ .rodata.decode
+                0x100058bc       0x28 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
  .rodata.make_branch.str1.4
-                0x100058dc       0x63 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x1000593f        0x1 
+                0x100058e4       0x63 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10005947        0x1 
  .rodata.insert_branch_and_link.str1.4
-                0x10005940       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10005948       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.irq_set_exclusive_handler.str1.4
-                0x10005950       0x36 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10005986        0x2 
+                0x10005958       0x36 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x1000598e        0x2 
  .rodata.irq_add_shared_handler.str1.4
-                0x10005988       0xd9 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10005a61        0x3 
+                0x10005990       0xd9 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10005a69        0x3 
  .rodata.irq_remove_handler.str1.4
-                0x10005a64       0x2a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10005a8e        0x2 
+                0x10005a6c       0x2a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10005a96        0x2 
  .rodata.irq_add_tail_to_free_list.str1.4
-                0x10005a90       0x3a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10005aca        0x2 
+                0x10005a98       0x3a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10005ad2        0x2 
  .rodata.__func__.0
-                0x10005acc       0x1a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10005ae6        0x2 
+                0x10005ad4       0x1a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10005aee        0x2 
  .rodata.__func__.1
-                0x10005ae8       0x17 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10005aff        0x1 
+                0x10005af0       0x17 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10005b07        0x1 
  .rodata.__func__.2
-                0x10005b00       0x13 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10005b13        0x1 
+                0x10005b08       0x13 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10005b1b        0x1 
  .rodata.__func__.3
-                0x10005b14        0xc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10005b1c        0xc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.__func__.4
-                0x10005b20        0xf CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10005b2f        0x1 
+                0x10005b28        0xf CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10005b37        0x1 
  .rodata.__func__.6
-                0x10005b30       0x1a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10005b4a        0x2 
+                0x10005b38       0x1a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10005b52        0x2 
  .rodata.repeating_timer_callback.str1.4
-                0x10005b4c       0x41 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10005b8d        0x3 
+                0x10005b54       0x41 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005b95        0x3 
  .rodata.alarm_pool_dump_key.str1.4
-                0x10005b90       0x33 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10005bc3        0x1 
+                0x10005b98       0x33 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005bcb        0x1 
  .rodata.ph_add_child_node.str1.4
-                0x10005bc4       0x8a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10005c4e        0x2 
+                0x10005bcc       0x8a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005c56        0x2 
  .rodata.add_alarm_under_lock.str1.4
-                0x10005c50       0x28 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10005c58       0x28 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
                                  0x2b (size before relaxing)
  .rodata.alarm_pool_alarm_callback.str1.4
-                0x10005c78       0xda CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10005d52        0x2 
+                0x10005c80       0xda CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005d5a        0x2 
  .rodata.__func__.10
-                0x10005d54       0x15 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10005d69        0x3 
+                0x10005d5c       0x15 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005d71        0x3 
  .rodata.__func__.11
-                0x10005d6c       0x1a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10005d86        0x2 
+                0x10005d74       0x1a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005d8e        0x2 
  .rodata.__func__.12
-                0x10005d88        0xa CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10005d92        0x2 
+                0x10005d90        0xa CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005d9a        0x2 
  .rodata.__func__.4
-                0x10005d94       0x12 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10005da6        0x2 
+                0x10005d9c       0x12 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005dae        0x2 
  .rodata.__func__.5
-                0x10005da8        0xd CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10005db5        0x3 
+                0x10005db0        0xd CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005dbd        0x3 
  .rodata.__func__.6
-                0x10005db8       0x12 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10005dca        0x2 
+                0x10005dc0       0x12 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005dd2        0x2 
  .rodata.__func__.7
-                0x10005dcc        0xf CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10005ddb        0x1 
+                0x10005dd4        0xf CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005de3        0x1 
  .rodata.__func__.8
-                0x10005ddc        0xc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10005de4        0xc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.__func__.9
-                0x10005de8       0x15 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10005dfd        0x3 
+                0x10005df0       0x15 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005e05        0x3 
  .rodata.hardware_alarm_claim.str1.4
-                0x10005e00       0x22 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x10005e22        0x2 
+                0x10005e08       0x22 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x10005e2a        0x2 
  .rodata.hardware_alarm_set_target.str1.4
-                0x10005e24       0x5b CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x10005e7f        0x1 
+                0x10005e2c       0x5b CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x10005e87        0x1 
  .rodata.__func__.0
-                0x10005e80       0x1a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10005e88       0x1a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .rodata.ph_add_child_node.str1.4
-                0x10005e9a       0x8a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
- *fill*         0x10005e9a        0x2 
+                0x10005ea2       0x8a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ *fill*         0x10005ea2        0x2 
  .rodata.ph_remove_any_head.str1.4
-                0x10005e9c       0x84 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10005ea4       0x84 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .rodata.ph_remove_and_free_node.str1.4
-                0x10005f20       0x1e CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10005f28       0x1e CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
                                  0x26 (size before relaxing)
- *fill*         0x10005f3e        0x2 
+ *fill*         0x10005f46        0x2 
  .rodata.__func__.0
-                0x10005f40       0x18 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10005f48       0x18 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .rodata.__func__.1
-                0x10005f58       0x13 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
- *fill*         0x10005f6b        0x1 
+                0x10005f60       0x13 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ *fill*         0x10005f73        0x1 
  .rodata.__func__.2
-                0x10005f6c       0x12 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
- *fill*         0x10005f7e        0x2 
+                0x10005f74       0x12 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ *fill*         0x10005f86        0x2 
  .rodata.__func__.3
-                0x10005f80        0xc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10005f88        0xc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .rodata.str1.4
-                0x10005f8c       0x81 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x10005f94       0x81 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
                                  0xd9 (size before relaxing)
- *fill*         0x1000600d        0x3 
+ *fill*         0x10006015        0x3 
  .rodata.__func__.1
-                0x10006010        0xb CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- *fill*         0x1000601b        0x1 
+                0x10006018        0xb CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ *fill*         0x10006023        0x1 
  .rodata.__assert_func.str1.4
-                0x1000601c       0x3f CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10006024       0x3f CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                                  0x43 (size before relaxing)
- *fill*         0x1000605b        0x1 
+ *fill*         0x10006063        0x1 
  .rodata.runtime_init.str1.4
-                0x1000605c       0x57 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x100060b3        0x1 
+                0x10006064       0x57 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x100060bb        0x1 
  .rodata.panic.str1.4
-                0x100060b4       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x100060bc       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                                  0x12 (size before relaxing)
  .rodata.__func__.1
-                0x100060c4        0xd CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x100060d1        0x3 
+                0x100060cc        0xd CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x100060d9        0x3 
  .rodata.clock_configure.str1.4
-                0x100060d4       0x4d CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- *fill*         0x10006121        0x3 
+                0x100060dc       0x4d CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ *fill*         0x10006129        0x3 
  .rodata.__func__.1
-                0x10006124       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x1000612c       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .rodata.pll_init.str1.4
-                0x10006134      0x12f CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- *fill*         0x10006263        0x1 
+                0x1000613c      0x12f CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ *fill*         0x1000626b        0x1 
  .rodata.__func__.0
-                0x10006264        0x9 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- *fill*         0x1000626d        0x3 
+                0x1000626c        0x9 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ *fill*         0x10006275        0x3 
  .rodata._ftoa.str1.4
-                0x10006270       0x15 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x10006285        0x3 
+                0x10006278       0x15 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x1000628d        0x3 
  .rodata._vsnprintf
-                0x10006288      0x1e0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10006290      0x1e0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.pow10.0
-                0x10006468       0x50 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10006470       0x50 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.__aeabi_double_init.str1.4
-                0x100064b8       0x9e CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- *fill*         0x10006556        0x2 
+                0x100064c0       0x9e CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ *fill*         0x1000655e        0x2 
  .rodata.__func__.0
-                0x10006558       0x14 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x10006560       0x14 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .rodata.__aeabi_float_init.str1.4
-                0x1000656c       0x70 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x10006574       0x70 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
                                  0x74 (size before relaxing)
  .rodata.__func__.0
-                0x100065dc       0x13 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- *fill*         0x100065ef        0x1 
+                0x100065e4       0x13 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ *fill*         0x100065f7        0x1 
  .rodata.str1.4
-                0x100065f0       0x44 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100065f8       0x44 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x10006634        0xc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x1000663c        0xc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x10006640        0xc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10006648        0xc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x1000664c        0xc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10006654        0xc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.3
-                0x10006658        0x2 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x1000665a        0x2 
+                0x10006660        0x2 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x10006662        0x2 
  .rodata.str1.4
-                0x1000665c       0x2c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10006664       0x2c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_28.4
-                0x10006688        0xc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10006690        0xc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_29.5
-                0x10006694        0x8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x1000669c                . = ALIGN (0x4)
+                0x1000669c        0x8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x100066a4                . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x1000669c                . = ALIGN (0x4)
+                0x100066a4                . = ALIGN (0x4)
 
-.rel.dyn        0x1000669c        0x0
- .rel.iplt      0x1000669c        0x0 c:/progra~2/gnuarm~1/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x100066a4        0x0
+ .rel.iplt      0x100066a4        0x0 c:/progra~2/gnuarm~1/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x1000669c                __exidx_start = .
+                0x100066a4                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x1000669c                __exidx_end = .
-                0x1000669c                . = ALIGN (0x4)
-                0x1000669c                __binary_info_start = .
+                0x100066a4                __exidx_end = .
+                0x100066a4                . = ALIGN (0x4)
+                0x100066a4                __binary_info_start = .
 
-.binary_info    0x1000669c       0x24
+.binary_info    0x100066a4       0x24
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr22
-                0x1000669c        0x4 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr30
-                0x100066a0        0x4 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr38
                 0x100066a4        0x4 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr44
+ .binary_info.keep.__bi_ptr30
                 0x100066a8        0x4 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr50
+ .binary_info.keep.__bi_ptr38
                 0x100066ac        0x4 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr75
+ .binary_info.keep.__bi_ptr44
                 0x100066b0        0x4 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr81
+ .binary_info.keep.__bi_ptr50
                 0x100066b4        0x4 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr75
+                0x100066b8        0x4 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr81
+                0x100066bc        0x4 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr28
-                0x100066b8        0x4 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x100066c0        0x4 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .binary_info.__bi_ptr29
-                0x100066bc        0x4 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x100066c0                __binary_info_end = .
-                0x100066c0                . = ALIGN (0x4)
-                0x100066c0                __etext = .
+                0x100066c4        0x4 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x100066c8                __binary_info_end = .
+                0x100066c8                . = ALIGN (0x4)
+                0x100066c8                __etext = .
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -2095,7 +2099,7 @@ LOAD c:/progra~2/gnuarm~1/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../
                 0x20000000       0xc0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x20000000                ram_vector_table
 
-.data           0x200000c0      0x340 load address 0x100066c0
+.data           0x200000c0      0x340 load address 0x100066c8
                 0x200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2180,27 +2184,27 @@ LOAD c:/progra~2/gnuarm~1/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../
                 0x20000400                . = ALIGN (0x4)
                 0x20000400                __data_end__ = .
 
-.igot.plt       0x20000400        0x0 load address 0x10006a00
+.igot.plt       0x20000400        0x0 load address 0x10006a08
  .igot.plt      0x20000400        0x0 c:/progra~2/gnuarm~1/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x20000400        0x0 load address 0x10006a00
+                0x20000400        0x0 load address 0x10006a08
                 0x20000400                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x20040000        0x0 load address 0x10006a00
+.scratch_x      0x20040000        0x0 load address 0x10006a08
                 0x20040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                . = ALIGN (0x4)
                 0x20040000                __scratch_x_end__ = .
-                0x10006a00                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x10006a08                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x10006a00
+.scratch_y      0x20041000        0x0 load address 0x10006a08
                 0x20041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                . = ALIGN (0x4)
                 0x20041000                __scratch_y_end__ = .
-                0x10006a00                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x10006a08                __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .bss            0x20000400      0x408
                 0x20000400                . = ALIGN (0x4)
@@ -2272,8 +2276,8 @@ LOAD c:/progra~2/gnuarm~1/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../
  *(.stack*)
  .stack         0x20041000      0x800 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x10006a00        0x0
-                0x10006a00                __flash_binary_end = .
+.flash_end      0x10006a08        0x0
+                0x10006a08                __flash_binary_end = .
                 0x20040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -2328,7 +2332,7 @@ LOAD CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard
 LOAD CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 LOAD CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 LOAD CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-LOAD C:\Users\a235917\AppData\Local\Temp\ccWjuVOb.o
+LOAD C:\Users\a235917\AppData\Local\Temp\ccTm52ss.o
 LOAD c:/progra~2/gnuarm~1/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libstdc++.a
 LOAD c:/progra~2/gnuarm~1/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a
 START GROUP
@@ -2421,7 +2425,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x000005a2       0x2c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .ARM.attributes
-                0x000005ce       0x22 C:\Users\a235917\AppData\Local\Temp\ccWjuVOb.o
+                0x000005ce       0x22 C:\Users\a235917\AppData\Local\Temp\ccTm52ss.o
  .ARM.attributes
                 0x000005f0       0x1e c:/progra~2/gnuarm~1/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .ARM.attributes
@@ -2455,330 +2459,330 @@ LOAD linker stubs
  .comment       0x00000049       0x4a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .comment       0x00000049       0x4a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 
-.debug_info     0x00000000    0x1af28
- .debug_info    0x00000000     0x20d3 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
- .debug_info    0x000020d3     0x16d7 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_info    0x000037aa      0x6bb CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_info    0x00003e65      0x1e3 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_info    0x00004048      0x58e CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_info    0x000045d6     0x1c49 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_info    0x0000621f      0x1a4 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_info    0x000063c3     0x3b3b CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_info    0x00009efe     0x1134 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_info    0x0000b032     0x120c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_info    0x0000c23e     0x2022 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_info    0x0000e260      0xb65 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_info    0x0000edc5      0xa87 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_info    0x0000f84c      0xf63 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_info    0x000107af      0x54a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_info    0x00010cf9      0x4ee CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_info    0x000111e7      0x1d8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_info    0x000113bf     0x1a5f CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_info    0x00012e1e       0x22 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_info    0x00012e40      0x27c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_info    0x000130bc       0x22 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_info    0x000130de       0x22 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_info    0x00013100      0x2d1 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_info    0x000133d1     0x5587 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
- .debug_info    0x00018958       0x22 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_info    0x0001897a       0x22 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_info    0x0001899c      0x2eb CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_info    0x00018c87       0x22 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_info    0x00018ca9       0x22 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_info    0x00018ccb       0x22 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_info    0x00018ced      0x2f6 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_info    0x00018fe3     0x12ee CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_info    0x0001a2d1      0xc57 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+.debug_info     0x00000000    0x1af73
+ .debug_info    0x00000000     0x211e CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
+ .debug_info    0x0000211e     0x16d7 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_info    0x000037f5      0x6bb CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_info    0x00003eb0      0x1e3 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_info    0x00004093      0x58e CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_info    0x00004621     0x1c49 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_info    0x0000626a      0x1a4 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_info    0x0000640e     0x3b3b CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_info    0x00009f49     0x1134 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_info    0x0000b07d     0x120c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_info    0x0000c289     0x2022 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_info    0x0000e2ab      0xb65 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_info    0x0000ee10      0xa87 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_info    0x0000f897      0xf63 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_info    0x000107fa      0x54a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_info    0x00010d44      0x4ee CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_info    0x00011232      0x1d8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_info    0x0001140a     0x1a5f CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_info    0x00012e69       0x22 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_info    0x00012e8b      0x27c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_info    0x00013107       0x22 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_info    0x00013129       0x22 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_info    0x0001314b      0x2d1 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_info    0x0001341c     0x5587 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+ .debug_info    0x000189a3       0x22 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_info    0x000189c5       0x22 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_info    0x000189e7      0x2eb CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_info    0x00018cd2       0x22 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_info    0x00018cf4       0x22 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_info    0x00018d16       0x22 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_info    0x00018d38      0x2f6 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_info    0x0001902e     0x12ee CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_info    0x0001a31c      0xc57 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 
-.debug_abbrev   0x00000000     0x4546
- .debug_abbrev  0x00000000      0x457 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
- .debug_abbrev  0x00000457      0x326 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_abbrev  0x0000077d      0x2e9 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_abbrev  0x00000a66       0xeb CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_abbrev  0x00000b51      0x21b CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_abbrev  0x00000d6c      0x4fc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_abbrev  0x00001268      0x116 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_abbrev  0x0000137e      0x54d CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_abbrev  0x000018cb      0x3a2 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_abbrev  0x00001c6d      0x297 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_abbrev  0x00001f04      0x386 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_abbrev  0x0000228a      0x2d2 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_abbrev  0x0000255c      0x3aa CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_abbrev  0x00002906      0x3a5 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_abbrev  0x00002cab      0x1ea CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_abbrev  0x00002e95      0x1a8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_abbrev  0x0000303d      0x109 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_abbrev  0x00003146      0x384 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_abbrev  0x000034ca       0x12 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_abbrev  0x000034dc      0x13b CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_abbrev  0x00003617       0x12 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_abbrev  0x00003629       0x12 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_abbrev  0x0000363b      0x179 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_abbrev  0x000037b4      0x2e3 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
- .debug_abbrev  0x00003a97       0x12 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_abbrev  0x00003aa9       0x12 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_abbrev  0x00003abb      0x18c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_abbrev  0x00003c47       0x12 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_abbrev  0x00003c59       0x12 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_abbrev  0x00003c6b       0x12 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_abbrev  0x00003c7d       0xad CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_abbrev  0x00003d2a      0x4a9 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_abbrev  0x000041d3      0x373 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+.debug_abbrev   0x00000000     0x456a
+ .debug_abbrev  0x00000000      0x47b CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
+ .debug_abbrev  0x0000047b      0x326 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_abbrev  0x000007a1      0x2e9 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_abbrev  0x00000a8a       0xeb CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_abbrev  0x00000b75      0x21b CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_abbrev  0x00000d90      0x4fc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_abbrev  0x0000128c      0x116 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_abbrev  0x000013a2      0x54d CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_abbrev  0x000018ef      0x3a2 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_abbrev  0x00001c91      0x297 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_abbrev  0x00001f28      0x386 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_abbrev  0x000022ae      0x2d2 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_abbrev  0x00002580      0x3aa CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_abbrev  0x0000292a      0x3a5 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_abbrev  0x00002ccf      0x1ea CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_abbrev  0x00002eb9      0x1a8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_abbrev  0x00003061      0x109 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_abbrev  0x0000316a      0x384 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_abbrev  0x000034ee       0x12 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_abbrev  0x00003500      0x13b CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_abbrev  0x0000363b       0x12 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_abbrev  0x0000364d       0x12 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_abbrev  0x0000365f      0x179 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_abbrev  0x000037d8      0x2e3 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+ .debug_abbrev  0x00003abb       0x12 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_abbrev  0x00003acd       0x12 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_abbrev  0x00003adf      0x18c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_abbrev  0x00003c6b       0x12 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_abbrev  0x00003c7d       0x12 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_abbrev  0x00003c8f       0x12 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_abbrev  0x00003ca1       0xad CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_abbrev  0x00003d4e      0x4a9 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_abbrev  0x000041f7      0x373 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 
-.debug_loc      0x00000000    0x16eba
- .debug_loc     0x00000000     0x1765 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
- .debug_loc     0x00001765     0x118d CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_loc     0x000028f2      0x45f CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_loc     0x00002d51       0xe9 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_loc     0x00002e3a      0x233 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_loc     0x0000306d     0x1365 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_loc     0x000043d2       0x60 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_loc     0x00004432     0x2e2a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_loc     0x0000725c      0x952 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_loc     0x00007bae     0x1439 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_loc     0x00008fe7     0x1469 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_loc     0x0000a450      0x520 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_loc     0x0000a970      0x3f0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_loc     0x0000ad60      0x7eb CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_loc     0x0000b54b      0x32f CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_loc     0x0000b87a      0x2ec CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_loc     0x0000bb66       0x71 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_loc     0x0000bbd7     0x2095 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_loc     0x0000dc6c      0x1a1 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_loc     0x0000de0d       0x59 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_loc     0x0000de66     0x7f1a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
- .debug_loc     0x00015d80       0x73 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_loc     0x00015df3      0xb7b CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_loc     0x0001696e      0x54c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+.debug_loc      0x00000000    0x1727a
+ .debug_loc     0x00000000     0x1b25 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
+ .debug_loc     0x00001b25     0x118d CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_loc     0x00002cb2      0x45f CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_loc     0x00003111       0xe9 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_loc     0x000031fa      0x233 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_loc     0x0000342d     0x1365 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_loc     0x00004792       0x60 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_loc     0x000047f2     0x2e2a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_loc     0x0000761c      0x952 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_loc     0x00007f6e     0x1439 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_loc     0x000093a7     0x1469 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_loc     0x0000a810      0x520 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_loc     0x0000ad30      0x3f0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_loc     0x0000b120      0x7eb CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_loc     0x0000b90b      0x32f CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_loc     0x0000bc3a      0x2ec CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_loc     0x0000bf26       0x71 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_loc     0x0000bf97     0x2095 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_loc     0x0000e02c      0x1a1 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_loc     0x0000e1cd       0x59 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_loc     0x0000e226     0x7f1a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+ .debug_loc     0x00016140       0x73 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_loc     0x000161b3      0xb7b CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_loc     0x00016d2e      0x54c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 
-.debug_aranges  0x00000000      0xf38
+.debug_aranges  0x00000000      0xf40
  .debug_aranges
-                0x00000000       0x90 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
+                0x00000000       0x98 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
  .debug_aranges
-                0x00000090      0x100 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x00000098      0x100 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .debug_aranges
-                0x00000190       0x48 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x00000198       0x48 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
  .debug_aranges
-                0x000001d8       0x28 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x000001e0       0x28 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
  .debug_aranges
-                0x00000200       0x58 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x00000208       0x58 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
  .debug_aranges
-                0x00000258       0xc8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000260       0xc8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .debug_aranges
-                0x00000320       0x20 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x00000328       0x20 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
  .debug_aranges
-                0x00000340       0xd0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000348       0xd0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .debug_aranges
-                0x00000410       0x78 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000418       0x78 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .debug_aranges
-                0x00000488       0x78 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000490       0x78 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .debug_aranges
-                0x00000500       0x88 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x00000508       0x88 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
  .debug_aranges
-                0x00000588       0x40 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x00000590       0x40 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
  .debug_aranges
-                0x000005c8       0x60 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x000005d0       0x60 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .debug_aranges
-                0x00000628       0x70 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x00000630       0x70 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .debug_aranges
-                0x00000698       0x28 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x000006a0       0x28 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
  .debug_aranges
-                0x000006c0       0x58 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x000006c8       0x58 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
  .debug_aranges
-                0x00000718       0x30 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x00000720       0x30 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
  .debug_aranges
-                0x00000748       0x90 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000750       0x90 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .debug_aranges
-                0x000007d8       0x68 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x000007e0       0x68 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .debug_aranges
-                0x00000840       0x30 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x00000848       0x30 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
  .debug_aranges
-                0x00000870       0x40 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x00000878       0x40 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
  .debug_aranges
-                0x000008b0      0x140 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x000008b8      0x140 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .debug_aranges
-                0x000009f0       0x20 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x000009f8       0x20 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .debug_aranges
-                0x00000a10      0x130 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+                0x00000a18      0x130 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
  .debug_aranges
-                0x00000b40       0xc8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000b48       0xc8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .debug_aranges
-                0x00000c08      0x130 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x00000c10      0x130 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  .debug_aranges
-                0x00000d38       0x20 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x00000d40       0x20 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
  .debug_aranges
-                0x00000d58       0x50 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x00000d60       0x50 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
  .debug_aranges
-                0x00000da8       0x38 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x00000db0       0x38 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
  .debug_aranges
-                0x00000de0       0x28 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+                0x00000de8       0x28 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
  .debug_aranges
-                0x00000e08       0x18 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000e10       0x18 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .debug_aranges
-                0x00000e20       0xd0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000e28       0xd0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .debug_aranges
-                0x00000ef0       0x48 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x00000ef8       0x48 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 
-.debug_ranges   0x00000000     0x41c0
- .debug_ranges  0x00000000      0xca0 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
- .debug_ranges  0x00000ca0      0x150 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_ranges  0x00000df0       0xd8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_ranges  0x00000ec8       0x18 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_ranges  0x00000ee0       0xf0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_ranges  0x00000fd0      0x400 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_ranges  0x000013d0       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_ranges  0x000013e0      0xba0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_ranges  0x00001f80      0x320 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_ranges  0x000022a0      0x248 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_ranges  0x000024e8      0xab8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_ranges  0x00002fa0       0xf8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_ranges  0x00003098       0x80 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_ranges  0x00003118       0x60 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_ranges  0x00003178       0x30 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_ranges  0x000031a8       0x48 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_ranges  0x000031f0       0x20 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_ranges  0x00003210      0x108 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_ranges  0x00003318       0x60 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_ranges  0x00003378       0x38 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_ranges  0x000033b0       0x38 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_ranges  0x000033e8      0x138 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_ranges  0x00003520       0x30 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_ranges  0x00003550      0x5e8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
- .debug_ranges  0x00003b38       0xc0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_ranges  0x00003bf8      0x128 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_ranges  0x00003d20       0x28 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_ranges  0x00003d48       0x48 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_ranges  0x00003d90       0x30 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_ranges  0x00003dc0       0x20 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_ranges  0x00003de0      0x1b0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_ranges  0x00003f90      0x230 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+.debug_ranges   0x00000000     0x41c8
+ .debug_ranges  0x00000000      0xca8 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
+ .debug_ranges  0x00000ca8      0x150 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_ranges  0x00000df8       0xd8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_ranges  0x00000ed0       0x18 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_ranges  0x00000ee8       0xf0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_ranges  0x00000fd8      0x400 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_ranges  0x000013d8       0x10 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_ranges  0x000013e8      0xba0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_ranges  0x00001f88      0x320 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_ranges  0x000022a8      0x248 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_ranges  0x000024f0      0xab8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_ranges  0x00002fa8       0xf8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_ranges  0x000030a0       0x80 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_ranges  0x00003120       0x60 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_ranges  0x00003180       0x30 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_ranges  0x000031b0       0x48 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_ranges  0x000031f8       0x20 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_ranges  0x00003218      0x108 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_ranges  0x00003320       0x60 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_ranges  0x00003380       0x38 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_ranges  0x000033b8       0x38 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_ranges  0x000033f0      0x138 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_ranges  0x00003528       0x30 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_ranges  0x00003558      0x5e8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+ .debug_ranges  0x00003b40       0xc0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_ranges  0x00003c00      0x128 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_ranges  0x00003d28       0x28 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_ranges  0x00003d50       0x48 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_ranges  0x00003d98       0x30 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_ranges  0x00003dc8       0x20 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_ranges  0x00003de8      0x1b0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_ranges  0x00003f98      0x230 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 
-.debug_line     0x00000000    0x10bce
- .debug_line    0x00000000     0x1300 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
- .debug_line    0x00001300      0xc38 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_line    0x00001f38      0x433 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_line    0x0000236b      0x24c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_line    0x000025b7      0x42f CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_line    0x000029e6      0xfc6 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_line    0x000039ac      0x1e6 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_line    0x00003b92     0x187d CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_line    0x0000540f      0xa72 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_line    0x00005e81      0x868 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_line    0x000066e9      0xfe6 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_line    0x000076cf      0x6c7 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_line    0x00007d96      0x7a3 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_line    0x00008539      0x91e CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_line    0x00008e57      0x4fa CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_line    0x00009351      0x3d9 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_line    0x0000972a      0x27d CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_line    0x000099a7     0x120e CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_line    0x0000abb5      0x13d CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_line    0x0000acf2      0x20f CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_line    0x0000af01      0x2c6 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_line    0x0000b1c7      0x41b CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_line    0x0000b5e2      0x30c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_line    0x0000b8ee     0x2c4b CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
- .debug_line    0x0000e539      0x693 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_line    0x0000ebcc      0x3d1 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_line    0x0000ef9d      0x2fe CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_line    0x0000f29b      0x1bd CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_line    0x0000f458       0xb7 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_line    0x0000f50f       0xc8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_line    0x0000f5d7      0x18f CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_line    0x0000f766      0xc9d CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_line    0x00010403      0x7cb CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+.debug_line     0x00000000    0x10bfa
+ .debug_line    0x00000000     0x132c CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
+ .debug_line    0x0000132c      0xc38 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_line    0x00001f64      0x433 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_line    0x00002397      0x24c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_line    0x000025e3      0x42f CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_line    0x00002a12      0xfc6 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_line    0x000039d8      0x1e6 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_line    0x00003bbe     0x187d CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_line    0x0000543b      0xa72 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_line    0x00005ead      0x868 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_line    0x00006715      0xfe6 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_line    0x000076fb      0x6c7 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_line    0x00007dc2      0x7a3 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_line    0x00008565      0x91e CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_line    0x00008e83      0x4fa CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_line    0x0000937d      0x3d9 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_line    0x00009756      0x27d CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_line    0x000099d3     0x120e CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_line    0x0000abe1      0x13d CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_line    0x0000ad1e      0x20f CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_line    0x0000af2d      0x2c6 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_line    0x0000b1f3      0x41b CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_line    0x0000b60e      0x30c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_line    0x0000b91a     0x2c4b CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+ .debug_line    0x0000e565      0x693 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_line    0x0000ebf8      0x3d1 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_line    0x0000efc9      0x2fe CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_line    0x0000f2c7      0x1bd CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_line    0x0000f484       0xb7 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_line    0x0000f53b       0xc8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_line    0x0000f603      0x18f CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_line    0x0000f792      0xc9d CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_line    0x0001042f      0x7cb CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 
-.debug_str      0x00000000     0x365e
- .debug_str     0x00000000      0x6ba CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
-                                0x77b (size before relaxing)
- .debug_str     0x000006ba      0x52b CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+.debug_str      0x00000000     0x3665
+ .debug_str     0x00000000      0x6c1 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
+                                0x782 (size before relaxing)
+ .debug_str     0x000006c1      0x52b CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
                                 0x98a (size before relaxing)
- .debug_str     0x00000be5      0x1b2 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_str     0x00000bec      0x1b2 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
                                 0x356 (size before relaxing)
- .debug_str     0x00000d97       0x77 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_str     0x00000d9e       0x77 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
                                 0x212 (size before relaxing)
- .debug_str     0x00000e0e       0xe2 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_str     0x00000e15       0xe2 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
                                 0x33d (size before relaxing)
- .debug_str     0x00000ef0      0x3d8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_str     0x00000ef7      0x3d8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
                                 0x7b3 (size before relaxing)
- .debug_str     0x000012c8       0x52 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_str     0x000012cf       0x52 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
                                 0x1f3 (size before relaxing)
- .debug_str     0x0000131a      0x73a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_str     0x00001321      0x73a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
                                 0xb88 (size before relaxing)
- .debug_str     0x00001a54      0x146 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_str     0x00001a5b      0x146 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
                                 0x68b (size before relaxing)
- .debug_str     0x00001b9a       0xca CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_str     0x00001ba1       0xca CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
                                 0x3dc (size before relaxing)
- .debug_str     0x00001c64      0x15b CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_str     0x00001c6b      0x15b CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
                                 0x5b7 (size before relaxing)
- .debug_str     0x00001dbf      0x205 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_str     0x00001dc6      0x205 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
                                 0x52a (size before relaxing)
- .debug_str     0x00001fc4      0x1d0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_str     0x00001fcb      0x1d0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                                 0x5f5 (size before relaxing)
- .debug_str     0x00002194      0x251 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_str     0x0000219b      0x251 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
                                 0x669 (size before relaxing)
- .debug_str     0x000023e5       0x85 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_str     0x000023ec       0x85 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
                                 0x2cd (size before relaxing)
- .debug_str     0x0000246a      0x11c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_str     0x00002471      0x11c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
                                 0x314 (size before relaxing)
- .debug_str     0x00002586       0x61 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_str     0x0000258d       0x61 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
                                 0x211 (size before relaxing)
- .debug_str     0x000025e7      0x224 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_str     0x000025ee      0x224 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
                                 0x472 (size before relaxing)
- .debug_str     0x0000280b       0x4b CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_str     0x00002812       0x4b CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
                                  0x63 (size before relaxing)
- .debug_str     0x00002856       0xba CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_str     0x0000285d       0xba CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
                                 0x24c (size before relaxing)
- .debug_str     0x00002910       0x37 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_str     0x00002917       0x37 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
                                  0x5d (size before relaxing)
- .debug_str     0x00002947       0x3b CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_str     0x0000294e       0x3b CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
                                  0x61 (size before relaxing)
- .debug_str     0x00002982       0x93 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_str     0x00002989       0x93 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
                                 0x28b (size before relaxing)
- .debug_str     0x00002a15      0x2be CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+ .debug_str     0x00002a1c      0x2be CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
                                 0x4fe (size before relaxing)
- .debug_str     0x00002cd3       0x41 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_str     0x00002cda       0x41 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
                                  0x67 (size before relaxing)
- .debug_str     0x00002d14       0x39 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_str     0x00002d1b       0x39 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
                                  0x5f (size before relaxing)
- .debug_str     0x00002d4d       0x77 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_str     0x00002d54       0x77 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
                                 0x2a7 (size before relaxing)
- .debug_str     0x00002dc4       0x3f CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_str     0x00002dcb       0x3f CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
                                  0x65 (size before relaxing)
- .debug_str     0x00002e03       0x3d CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_str     0x00002e0a       0x3d CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
                                  0x63 (size before relaxing)
- .debug_str     0x00002e40       0x3a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_str     0x00002e47       0x3a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
                                  0x60 (size before relaxing)
- .debug_str     0x00002e7a      0x23a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_str     0x00002e81      0x23a CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
                                 0x3d4 (size before relaxing)
- .debug_str     0x000030b4      0x358 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_str     0x000030bb      0x358 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
                                 0x7aa (size before relaxing)
- .debug_str     0x0000340c      0x252 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .debug_str     0x00003413      0x252 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
                                 0x736 (size before relaxing)
 
-.debug_frame    0x00000000     0x1cbc
- .debug_frame   0x00000000      0x1cc CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
- .debug_frame   0x000001cc      0x278 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_frame   0x00000444       0x9c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_frame   0x000004e0       0x38 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_frame   0x00000518       0xc4 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_frame   0x000005dc      0x20c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_frame   0x000007e8       0x20 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_frame   0x00000808      0x294 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_frame   0x00000a9c      0x134 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_frame   0x00000bd0      0x164 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_frame   0x00000d34      0x1a0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_frame   0x00000ed4       0x78 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_frame   0x00000f4c       0xdc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_frame   0x00001028      0x12c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_frame   0x00001154       0x44 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_frame   0x00001198       0xa8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_frame   0x00001240       0x40 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_frame   0x00001280      0x1f8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_frame   0x00001478       0x64 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_frame   0x000014dc       0x2c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_frame   0x00001508      0x440 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
- .debug_frame   0x00001948       0x2c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_frame   0x00001974      0x26c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_frame   0x00001be0       0xb4 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .debug_frame   0x00001c94       0x28 c:/progra~2/gnuarm~1/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-strlen-stub.o)
+.debug_frame    0x00000000     0x1cd8
+ .debug_frame   0x00000000      0x1e8 CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
+ .debug_frame   0x000001e8      0x278 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_frame   0x00000460       0x9c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_frame   0x000004fc       0x38 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_frame   0x00000534       0xc4 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_frame   0x000005f8      0x20c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_frame   0x00000804       0x20 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_frame   0x00000824      0x294 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_frame   0x00000ab8      0x134 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_frame   0x00000bec      0x164 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_frame   0x00000d50      0x1a0 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_frame   0x00000ef0       0x78 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_frame   0x00000f68       0xdc CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_frame   0x00001044      0x12c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_frame   0x00001170       0x44 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_frame   0x000011b4       0xa8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_frame   0x0000125c       0x40 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_frame   0x0000129c      0x1f8 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_frame   0x00001494       0x64 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_frame   0x000014f8       0x2c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_frame   0x00001524      0x440 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+ .debug_frame   0x00001964       0x2c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_frame   0x00001990      0x26c CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_frame   0x00001bfc       0xb4 CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .debug_frame   0x00001cb0       0x28 c:/progra~2/gnuarm~1/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-strlen-stub.o)
