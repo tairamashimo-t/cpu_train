@@ -106,17 +106,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named train_cpu_test
+# Target rules for targets named train_cpu
 
 # Build rule for target.
-train_cpu_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) train_cpu_test
-.PHONY : train_cpu_test
+train_cpu: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) train_cpu
+.PHONY : train_cpu
 
 # fast build rule for target.
-train_cpu_test\fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\build
-.PHONY : train_cpu_test\fast
+train_cpu\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\build
+.PHONY : train_cpu\fast
 
 #=============================================================================
 # Target rules for targets named ELF2UF2Build
@@ -214,7 +214,7 @@ C_\Pico\pico-sdk\src\common\pico_sync\critical_section.obj: C_\Pico\pico-sdk\src
 
 # target to build an object file
 C_\Pico\pico-sdk\src\common\pico_sync\critical_section.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_sync\critical_section.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_sync\critical_section.c.obj
 .PHONY : C_\Pico\pico-sdk\src\common\pico_sync\critical_section.c.obj
 
 C_\Pico\pico-sdk\src\common\pico_sync\critical_section.i: C_\Pico\pico-sdk\src\common\pico_sync\critical_section.c.i
@@ -222,7 +222,7 @@ C_\Pico\pico-sdk\src\common\pico_sync\critical_section.i: C_\Pico\pico-sdk\src\c
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\common\pico_sync\critical_section.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_sync\critical_section.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_sync\critical_section.c.i
 .PHONY : C_\Pico\pico-sdk\src\common\pico_sync\critical_section.c.i
 
 C_\Pico\pico-sdk\src\common\pico_sync\critical_section.s: C_\Pico\pico-sdk\src\common\pico_sync\critical_section.c.s
@@ -230,7 +230,7 @@ C_\Pico\pico-sdk\src\common\pico_sync\critical_section.s: C_\Pico\pico-sdk\src\c
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\common\pico_sync\critical_section.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_sync\critical_section.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_sync\critical_section.c.s
 .PHONY : C_\Pico\pico-sdk\src\common\pico_sync\critical_section.c.s
 
 C_\Pico\pico-sdk\src\common\pico_sync\lock_core.obj: C_\Pico\pico-sdk\src\common\pico_sync\lock_core.c.obj
@@ -238,7 +238,7 @@ C_\Pico\pico-sdk\src\common\pico_sync\lock_core.obj: C_\Pico\pico-sdk\src\common
 
 # target to build an object file
 C_\Pico\pico-sdk\src\common\pico_sync\lock_core.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_sync\lock_core.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_sync\lock_core.c.obj
 .PHONY : C_\Pico\pico-sdk\src\common\pico_sync\lock_core.c.obj
 
 C_\Pico\pico-sdk\src\common\pico_sync\lock_core.i: C_\Pico\pico-sdk\src\common\pico_sync\lock_core.c.i
@@ -246,7 +246,7 @@ C_\Pico\pico-sdk\src\common\pico_sync\lock_core.i: C_\Pico\pico-sdk\src\common\p
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\common\pico_sync\lock_core.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_sync\lock_core.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_sync\lock_core.c.i
 .PHONY : C_\Pico\pico-sdk\src\common\pico_sync\lock_core.c.i
 
 C_\Pico\pico-sdk\src\common\pico_sync\lock_core.s: C_\Pico\pico-sdk\src\common\pico_sync\lock_core.c.s
@@ -254,7 +254,7 @@ C_\Pico\pico-sdk\src\common\pico_sync\lock_core.s: C_\Pico\pico-sdk\src\common\p
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\common\pico_sync\lock_core.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_sync\lock_core.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_sync\lock_core.c.s
 .PHONY : C_\Pico\pico-sdk\src\common\pico_sync\lock_core.c.s
 
 C_\Pico\pico-sdk\src\common\pico_sync\mutex.obj: C_\Pico\pico-sdk\src\common\pico_sync\mutex.c.obj
@@ -262,7 +262,7 @@ C_\Pico\pico-sdk\src\common\pico_sync\mutex.obj: C_\Pico\pico-sdk\src\common\pic
 
 # target to build an object file
 C_\Pico\pico-sdk\src\common\pico_sync\mutex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_sync\mutex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_sync\mutex.c.obj
 .PHONY : C_\Pico\pico-sdk\src\common\pico_sync\mutex.c.obj
 
 C_\Pico\pico-sdk\src\common\pico_sync\mutex.i: C_\Pico\pico-sdk\src\common\pico_sync\mutex.c.i
@@ -270,7 +270,7 @@ C_\Pico\pico-sdk\src\common\pico_sync\mutex.i: C_\Pico\pico-sdk\src\common\pico_
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\common\pico_sync\mutex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_sync\mutex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_sync\mutex.c.i
 .PHONY : C_\Pico\pico-sdk\src\common\pico_sync\mutex.c.i
 
 C_\Pico\pico-sdk\src\common\pico_sync\mutex.s: C_\Pico\pico-sdk\src\common\pico_sync\mutex.c.s
@@ -278,7 +278,7 @@ C_\Pico\pico-sdk\src\common\pico_sync\mutex.s: C_\Pico\pico-sdk\src\common\pico_
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\common\pico_sync\mutex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_sync\mutex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_sync\mutex.c.s
 .PHONY : C_\Pico\pico-sdk\src\common\pico_sync\mutex.c.s
 
 C_\Pico\pico-sdk\src\common\pico_sync\sem.obj: C_\Pico\pico-sdk\src\common\pico_sync\sem.c.obj
@@ -286,7 +286,7 @@ C_\Pico\pico-sdk\src\common\pico_sync\sem.obj: C_\Pico\pico-sdk\src\common\pico_
 
 # target to build an object file
 C_\Pico\pico-sdk\src\common\pico_sync\sem.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_sync\sem.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_sync\sem.c.obj
 .PHONY : C_\Pico\pico-sdk\src\common\pico_sync\sem.c.obj
 
 C_\Pico\pico-sdk\src\common\pico_sync\sem.i: C_\Pico\pico-sdk\src\common\pico_sync\sem.c.i
@@ -294,7 +294,7 @@ C_\Pico\pico-sdk\src\common\pico_sync\sem.i: C_\Pico\pico-sdk\src\common\pico_sy
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\common\pico_sync\sem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_sync\sem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_sync\sem.c.i
 .PHONY : C_\Pico\pico-sdk\src\common\pico_sync\sem.c.i
 
 C_\Pico\pico-sdk\src\common\pico_sync\sem.s: C_\Pico\pico-sdk\src\common\pico_sync\sem.c.s
@@ -302,7 +302,7 @@ C_\Pico\pico-sdk\src\common\pico_sync\sem.s: C_\Pico\pico-sdk\src\common\pico_sy
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\common\pico_sync\sem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_sync\sem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_sync\sem.c.s
 .PHONY : C_\Pico\pico-sdk\src\common\pico_sync\sem.c.s
 
 C_\Pico\pico-sdk\src\common\pico_time\time.obj: C_\Pico\pico-sdk\src\common\pico_time\time.c.obj
@@ -310,7 +310,7 @@ C_\Pico\pico-sdk\src\common\pico_time\time.obj: C_\Pico\pico-sdk\src\common\pico
 
 # target to build an object file
 C_\Pico\pico-sdk\src\common\pico_time\time.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_time\time.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_time\time.c.obj
 .PHONY : C_\Pico\pico-sdk\src\common\pico_time\time.c.obj
 
 C_\Pico\pico-sdk\src\common\pico_time\time.i: C_\Pico\pico-sdk\src\common\pico_time\time.c.i
@@ -318,7 +318,7 @@ C_\Pico\pico-sdk\src\common\pico_time\time.i: C_\Pico\pico-sdk\src\common\pico_t
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\common\pico_time\time.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_time\time.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_time\time.c.i
 .PHONY : C_\Pico\pico-sdk\src\common\pico_time\time.c.i
 
 C_\Pico\pico-sdk\src\common\pico_time\time.s: C_\Pico\pico-sdk\src\common\pico_time\time.c.s
@@ -326,7 +326,7 @@ C_\Pico\pico-sdk\src\common\pico_time\time.s: C_\Pico\pico-sdk\src\common\pico_t
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\common\pico_time\time.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_time\time.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_time\time.c.s
 .PHONY : C_\Pico\pico-sdk\src\common\pico_time\time.c.s
 
 C_\Pico\pico-sdk\src\common\pico_time\timeout_helper.obj: C_\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.obj
@@ -334,7 +334,7 @@ C_\Pico\pico-sdk\src\common\pico_time\timeout_helper.obj: C_\Pico\pico-sdk\src\c
 
 # target to build an object file
 C_\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.obj
 .PHONY : C_\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.obj
 
 C_\Pico\pico-sdk\src\common\pico_time\timeout_helper.i: C_\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.i
@@ -342,7 +342,7 @@ C_\Pico\pico-sdk\src\common\pico_time\timeout_helper.i: C_\Pico\pico-sdk\src\com
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.i
 .PHONY : C_\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.i
 
 C_\Pico\pico-sdk\src\common\pico_time\timeout_helper.s: C_\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.s
@@ -350,7 +350,7 @@ C_\Pico\pico-sdk\src\common\pico_time\timeout_helper.s: C_\Pico\pico-sdk\src\com
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.s
 .PHONY : C_\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.s
 
 C_\Pico\pico-sdk\src\common\pico_util\datetime.obj: C_\Pico\pico-sdk\src\common\pico_util\datetime.c.obj
@@ -358,7 +358,7 @@ C_\Pico\pico-sdk\src\common\pico_util\datetime.obj: C_\Pico\pico-sdk\src\common\
 
 # target to build an object file
 C_\Pico\pico-sdk\src\common\pico_util\datetime.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_util\datetime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_util\datetime.c.obj
 .PHONY : C_\Pico\pico-sdk\src\common\pico_util\datetime.c.obj
 
 C_\Pico\pico-sdk\src\common\pico_util\datetime.i: C_\Pico\pico-sdk\src\common\pico_util\datetime.c.i
@@ -366,7 +366,7 @@ C_\Pico\pico-sdk\src\common\pico_util\datetime.i: C_\Pico\pico-sdk\src\common\pi
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\common\pico_util\datetime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_util\datetime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_util\datetime.c.i
 .PHONY : C_\Pico\pico-sdk\src\common\pico_util\datetime.c.i
 
 C_\Pico\pico-sdk\src\common\pico_util\datetime.s: C_\Pico\pico-sdk\src\common\pico_util\datetime.c.s
@@ -374,7 +374,7 @@ C_\Pico\pico-sdk\src\common\pico_util\datetime.s: C_\Pico\pico-sdk\src\common\pi
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\common\pico_util\datetime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_util\datetime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_util\datetime.c.s
 .PHONY : C_\Pico\pico-sdk\src\common\pico_util\datetime.c.s
 
 C_\Pico\pico-sdk\src\common\pico_util\pheap.obj: C_\Pico\pico-sdk\src\common\pico_util\pheap.c.obj
@@ -382,7 +382,7 @@ C_\Pico\pico-sdk\src\common\pico_util\pheap.obj: C_\Pico\pico-sdk\src\common\pic
 
 # target to build an object file
 C_\Pico\pico-sdk\src\common\pico_util\pheap.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_util\pheap.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_util\pheap.c.obj
 .PHONY : C_\Pico\pico-sdk\src\common\pico_util\pheap.c.obj
 
 C_\Pico\pico-sdk\src\common\pico_util\pheap.i: C_\Pico\pico-sdk\src\common\pico_util\pheap.c.i
@@ -390,7 +390,7 @@ C_\Pico\pico-sdk\src\common\pico_util\pheap.i: C_\Pico\pico-sdk\src\common\pico_
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\common\pico_util\pheap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_util\pheap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_util\pheap.c.i
 .PHONY : C_\Pico\pico-sdk\src\common\pico_util\pheap.c.i
 
 C_\Pico\pico-sdk\src\common\pico_util\pheap.s: C_\Pico\pico-sdk\src\common\pico_util\pheap.c.s
@@ -398,7 +398,7 @@ C_\Pico\pico-sdk\src\common\pico_util\pheap.s: C_\Pico\pico-sdk\src\common\pico_
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\common\pico_util\pheap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_util\pheap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_util\pheap.c.s
 .PHONY : C_\Pico\pico-sdk\src\common\pico_util\pheap.c.s
 
 C_\Pico\pico-sdk\src\common\pico_util\queue.obj: C_\Pico\pico-sdk\src\common\pico_util\queue.c.obj
@@ -406,7 +406,7 @@ C_\Pico\pico-sdk\src\common\pico_util\queue.obj: C_\Pico\pico-sdk\src\common\pic
 
 # target to build an object file
 C_\Pico\pico-sdk\src\common\pico_util\queue.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_util\queue.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_util\queue.c.obj
 .PHONY : C_\Pico\pico-sdk\src\common\pico_util\queue.c.obj
 
 C_\Pico\pico-sdk\src\common\pico_util\queue.i: C_\Pico\pico-sdk\src\common\pico_util\queue.c.i
@@ -414,7 +414,7 @@ C_\Pico\pico-sdk\src\common\pico_util\queue.i: C_\Pico\pico-sdk\src\common\pico_
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\common\pico_util\queue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_util\queue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_util\queue.c.i
 .PHONY : C_\Pico\pico-sdk\src\common\pico_util\queue.c.i
 
 C_\Pico\pico-sdk\src\common\pico_util\queue.s: C_\Pico\pico-sdk\src\common\pico_util\queue.c.s
@@ -422,7 +422,7 @@ C_\Pico\pico-sdk\src\common\pico_util\queue.s: C_\Pico\pico-sdk\src\common\pico_
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\common\pico_util\queue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\common\pico_util\queue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\common\pico_util\queue.c.s
 .PHONY : C_\Pico\pico-sdk\src\common\pico_util\queue.c.s
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.obj: C_\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.obj
@@ -430,7 +430,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.obj: C_\Pico\pico-sdk\src\r
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.obj
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.i: C_\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.i
@@ -438,7 +438,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.i: C_\Pico\pico-sdk\src\rp2
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.i
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.i
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.s: C_\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.s
@@ -446,7 +446,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.s: C_\Pico\pico-sdk\src\rp2
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.s
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.s
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.obj: C_\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.obj
@@ -454,7 +454,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.obj: C_\Pico\pico-sdk\src
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.obj
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.i: C_\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.i
@@ -462,7 +462,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.i: C_\Pico\pico-sdk\src\r
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.i
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.i
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.s: C_\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.s
@@ -470,7 +470,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.s: C_\Pico\pico-sdk\src\r
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.s
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.s
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.obj: C_\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.S.obj
@@ -478,7 +478,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.obj: C_\Pico\pico-sdk\s
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.S.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.S.obj
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.obj: C_\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.obj
@@ -486,7 +486,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.obj: C_\Pico\pico-sdk\src\rp2
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.obj
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.i: C_\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.i
@@ -494,7 +494,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.i: C_\Pico\pico-sdk\src\rp2_c
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.i
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.i
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.s: C_\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.s
@@ -502,7 +502,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.s: C_\Pico\pico-sdk\src\rp2_c
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.s
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.s
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.obj: C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.obj
@@ -510,7 +510,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.obj: C_\Pico\pico-sdk\src\rp2_c
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.obj
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.i: C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.i
@@ -518,7 +518,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.i: C_\Pico\pico-sdk\src\rp2_com
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.i
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.i
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.s: C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.s
@@ -526,7 +526,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.s: C_\Pico\pico-sdk\src\rp2_com
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.s
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.s
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.obj: C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.S.obj
@@ -534,7 +534,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.obj: C_\Pico\pico
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.S.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.S.obj
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.obj: C_\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.obj
@@ -542,7 +542,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.obj: C_\Pico\pico-sdk\src\rp2_c
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.obj
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.i: C_\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.i
@@ -550,7 +550,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.i: C_\Pico\pico-sdk\src\rp2_com
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.i
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.i
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.s: C_\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.s
@@ -558,7 +558,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.s: C_\Pico\pico-sdk\src\rp2_com
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.s
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.s
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.obj: C_\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.obj
@@ -566,7 +566,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.obj: C_\Pico\pico-sdk\src\rp2
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.obj
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.i: C_\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.i
@@ -574,7 +574,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.i: C_\Pico\pico-sdk\src\rp2_c
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.i
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.i
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.s: C_\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.s
@@ -582,7 +582,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.s: C_\Pico\pico-sdk\src\rp2_c
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.s
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.s
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.obj: C_\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.obj
@@ -590,7 +590,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.obj: C_\Pico\pico-sdk\src\r
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.obj
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.i: C_\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.i
@@ -598,7 +598,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.i: C_\Pico\pico-sdk\src\rp2
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.i
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.i
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.s: C_\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.s
@@ -606,7 +606,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.s: C_\Pico\pico-sdk\src\rp2
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.s
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.s
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.obj: C_\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.obj
@@ -614,7 +614,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.obj: C_\Pico\pico-sdk\src\rp2
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.obj
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.i: C_\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.i
@@ -622,7 +622,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.i: C_\Pico\pico-sdk\src\rp2_c
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.i
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.i
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.s: C_\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.s
@@ -630,7 +630,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.s: C_\Pico\pico-sdk\src\rp2_c
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.s
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.s
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.obj: C_\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.obj
@@ -638,7 +638,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.obj: C_\Pico\pico-sdk\src\rp2
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.obj
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.i: C_\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.i
@@ -646,7 +646,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.i: C_\Pico\pico-sdk\src\rp2_c
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.i
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.i
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.s: C_\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.s
@@ -654,7 +654,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.s: C_\Pico\pico-sdk\src\rp2_c
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.s
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.s
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.obj: C_\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.obj
@@ -662,7 +662,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.obj: C_\Pico\pico-sdk
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.obj
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.i: C_\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.i
@@ -670,7 +670,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.i: C_\Pico\pico-sdk\s
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.i
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.i
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.s: C_\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.s
@@ -678,7 +678,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.s: C_\Pico\pico-sdk\s
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.s
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.s
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.obj: C_\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.obj
@@ -686,7 +686,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.obj: C_\Pico\pico-sdk\src\rp2
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.obj
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.i: C_\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.i
@@ -694,7 +694,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.i: C_\Pico\pico-sdk\src\rp2_c
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.i
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.i
 
 C_\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.s: C_\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.s
@@ -702,7 +702,7 @@ C_\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.s: C_\Pico\pico-sdk\src\rp2_c
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.s
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.s
 
 C_\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.obj: C_\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.S.obj
@@ -710,7 +710,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.obj: C_\Pico\pico-sdk
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.S.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.S.obj
 
 C_\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.obj: C_\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.obj
@@ -718,7 +718,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.obj: C_\Pico\pico-sdk\src\r
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.obj
 
 C_\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.i: C_\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.i
@@ -726,7 +726,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.i: C_\Pico\pico-sdk\src\rp2
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.i
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.i
 
 C_\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.s: C_\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.s
@@ -734,7 +734,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.s: C_\Pico\pico-sdk\src\rp2
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.s
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.s
 
 C_\Pico\pico-sdk\src\rp2_common\pico_divider\divider.obj: C_\Pico\pico-sdk\src\rp2_common\pico_divider\divider.S.obj
@@ -742,7 +742,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_divider\divider.obj: C_\Pico\pico-sdk\src\r
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\pico_divider\divider.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_divider\divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_divider\divider.S.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_divider\divider.S.obj
 
 C_\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.obj: C_\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.S.obj
@@ -750,7 +750,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.obj: C_\Pico\pico-sdk\s
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.S.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.S.obj
 
 C_\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.obj: C_\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.obj
@@ -758,7 +758,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.obj: C_\Pico\pico-sd
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.obj
 
 C_\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.i: C_\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.i
@@ -766,7 +766,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.i: C_\Pico\pico-sdk\
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.i
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.i
 
 C_\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.s: C_\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.s
@@ -774,7 +774,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.s: C_\Pico\pico-sdk\
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.s
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.s
 
 C_\Pico\pico-sdk\src\rp2_common\pico_double\double_math.obj: C_\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.obj
@@ -782,7 +782,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_double\double_math.obj: C_\Pico\pico-sdk\sr
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.obj
 
 C_\Pico\pico-sdk\src\rp2_common\pico_double\double_math.i: C_\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.i
@@ -790,7 +790,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_double\double_math.i: C_\Pico\pico-sdk\src\
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.i
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.i
 
 C_\Pico\pico-sdk\src\rp2_common\pico_double\double_math.s: C_\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.s
@@ -798,7 +798,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_double\double_math.s: C_\Pico\pico-sdk\src\
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.s
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.s
 
 C_\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.obj: C_\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S.obj
@@ -806,7 +806,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.obj: C_\Pico\pico
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S.obj
 
 C_\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.obj: C_\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.S.obj
@@ -814,7 +814,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.obj: C_\Pico\pico-sdk\src
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.S.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.S.obj
 
 C_\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.obj: C_\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.obj
@@ -822,7 +822,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.obj: C_\Pico\pico-sdk\
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.obj
 
 C_\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.i: C_\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.i
@@ -830,7 +830,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.i: C_\Pico\pico-sdk\sr
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.i
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.i
 
 C_\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.s: C_\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.s
@@ -838,7 +838,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.s: C_\Pico\pico-sdk\sr
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.s
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.s
 
 C_\Pico\pico-sdk\src\rp2_common\pico_float\float_math.obj: C_\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.obj
@@ -846,7 +846,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_float\float_math.obj: C_\Pico\pico-sdk\src\
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.obj
 
 C_\Pico\pico-sdk\src\rp2_common\pico_float\float_math.i: C_\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.i
@@ -854,7 +854,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_float\float_math.i: C_\Pico\pico-sdk\src\rp
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.i
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.i
 
 C_\Pico\pico-sdk\src\rp2_common\pico_float\float_math.s: C_\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.s
@@ -862,7 +862,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_float\float_math.s: C_\Pico\pico-sdk\src\rp
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.s
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.s
 
 C_\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.obj: C_\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S.obj
@@ -870,7 +870,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.obj: C_\Pico\pico-s
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S.obj
 
 C_\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.obj: C_\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj
@@ -878,7 +878,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.obj: C_\Pico
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj
 
 C_\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.obj: C_\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.obj
@@ -886,7 +886,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.obj: C_\Pico\pico-sdk\sr
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.obj
 
 C_\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.i: C_\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.i
@@ -894,7 +894,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.i: C_\Pico\pico-sdk\src\
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.i
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.i
 
 C_\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.s: C_\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.s
@@ -902,7 +902,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.s: C_\Pico\pico-sdk\src\
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.s
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.s
 
 C_\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.obj: C_\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S.obj
@@ -910,7 +910,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.obj: C_\Pico\pico-sdk
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S.obj
 
 C_\Pico\pico-sdk\src\rp2_common\pico_platform\platform.obj: C_\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.obj
@@ -918,7 +918,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_platform\platform.obj: C_\Pico\pico-sdk\src
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.obj
 
 C_\Pico\pico-sdk\src\rp2_common\pico_platform\platform.i: C_\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.i
@@ -926,7 +926,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_platform\platform.i: C_\Pico\pico-sdk\src\r
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.i
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.i
 
 C_\Pico\pico-sdk\src\rp2_common\pico_platform\platform.s: C_\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.s
@@ -934,7 +934,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_platform\platform.s: C_\Pico\pico-sdk\src\r
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.s
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.s
 
 C_\Pico\pico-sdk\src\rp2_common\pico_printf\printf.obj: C_\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.obj
@@ -942,7 +942,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_printf\printf.obj: C_\Pico\pico-sdk\src\rp2
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.obj
 
 C_\Pico\pico-sdk\src\rp2_common\pico_printf\printf.i: C_\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.i
@@ -950,7 +950,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_printf\printf.i: C_\Pico\pico-sdk\src\rp2_c
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.i
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.i
 
 C_\Pico\pico-sdk\src\rp2_common\pico_printf\printf.s: C_\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.s
@@ -958,7 +958,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_printf\printf.s: C_\Pico\pico-sdk\src\rp2_c
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.s
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.s
 
 C_\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.obj: C_\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.obj
@@ -966,7 +966,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.obj: C_\Pico\pico-sdk\src\r
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.obj
 
 C_\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.i: C_\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.i
@@ -974,7 +974,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.i: C_\Pico\pico-sdk\src\rp2
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.i
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.i
 
 C_\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.s: C_\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.s
@@ -982,7 +982,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.s: C_\Pico\pico-sdk\src\rp2
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.s
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.s
 
 C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.obj: C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.obj
@@ -990,7 +990,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.obj: C_\Pico\pico
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.obj
 
 C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.i: C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.i
@@ -998,7 +998,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.i: C_\Pico\pico-s
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.i
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.i
 
 C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.s: C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.s
@@ -1006,7 +1006,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.s: C_\Pico\pico-s
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.s
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.s
 
 C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.obj: C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.S.obj
@@ -1014,7 +1014,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.obj: C_\Pico\pico-sdk\sr
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.S.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.S.obj
 
 C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.obj: C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj
@@ -1022,7 +1022,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.obj: C_\Pico\pico-
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj
 
 C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.i: C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.i
@@ -1030,7 +1030,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.i: C_\Pico\pico-sd
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.i
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.i
 
 C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.s: C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.s
@@ -1038,7 +1038,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.s: C_\Pico\pico-sd
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.s
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.s
 
 C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.obj: C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj
@@ -1046,7 +1046,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.obj: C_\Pico\pico-sdk\src\rp2_c
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj
 
 C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.i: C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.i
@@ -1054,7 +1054,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.i: C_\Pico\pico-sdk\src\rp2_com
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.i
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.i
 
 C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.s: C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.s
@@ -1062,7 +1062,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.s: C_\Pico\pico-sdk\src\rp2_com
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.s
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.s
 
 C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.obj: C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj
@@ -1070,7 +1070,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.obj: C_\Pico\pico-sdk
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj
 
 C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.i: C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.i
@@ -1078,7 +1078,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.i: C_\Pico\pico-sdk\s
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.i
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.i
 
 C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.s: C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.s
@@ -1086,7 +1086,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.s: C_\Pico\pico-sdk\s
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.s
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.s
 
 C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.obj: C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj
@@ -1094,7 +1094,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.obj: C_\Pico\pico-sdk\src\rp2
 
 # target to build an object file
 C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj
 
 C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.i: C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.i
@@ -1102,7 +1102,7 @@ C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.i: C_\Pico\pico-sdk\src\rp2_c
 
 # target to preprocess a source file
 C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.i
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.i
 
 C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.s: C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.s
@@ -1110,32 +1110,32 @@ C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.s: C_\Pico\pico-sdk\src\rp2_c
 
 # target to generate assembly for a file
 C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.s
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.s
 
-train_cpu_test.obj: train_cpu_test.c.obj
-.PHONY : train_cpu_test.obj
+train_cpu.obj: train_cpu.c.obj
+.PHONY : train_cpu.obj
 
 # target to build an object file
-train_cpu_test.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\train_cpu_test.c.obj
-.PHONY : train_cpu_test.c.obj
+train_cpu.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\train_cpu.c.obj
+.PHONY : train_cpu.c.obj
 
-train_cpu_test.i: train_cpu_test.c.i
-.PHONY : train_cpu_test.i
+train_cpu.i: train_cpu.c.i
+.PHONY : train_cpu.i
 
 # target to preprocess a source file
-train_cpu_test.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\train_cpu_test.c.i
-.PHONY : train_cpu_test.c.i
+train_cpu.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\train_cpu.c.i
+.PHONY : train_cpu.c.i
 
-train_cpu_test.s: train_cpu_test.c.s
-.PHONY : train_cpu_test.s
+train_cpu.s: train_cpu.c.s
+.PHONY : train_cpu.s
 
 # target to generate assembly for a file
-train_cpu_test.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\train_cpu_test.c.s
-.PHONY : train_cpu_test.c.s
+train_cpu.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\train_cpu.c.s
+.PHONY : train_cpu.c.s
 
 # Help Target
 help:
@@ -1152,7 +1152,7 @@ help:
 	@echo ... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h
 	@echo ... cyw43_firmware_package
 	@echo ... bs2_default
-	@echo ... train_cpu_test
+	@echo ... train_cpu
 	@echo ... C_/Pico/pico-sdk/src/common/pico_sync/critical_section.obj
 	@echo ... C_/Pico/pico-sdk/src/common/pico_sync/critical_section.i
 	@echo ... C_/Pico/pico-sdk/src/common/pico_sync/critical_section.s
@@ -1266,9 +1266,9 @@ help:
 	@echo ... C_/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj
 	@echo ... C_/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i
 	@echo ... C_/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s
-	@echo ... train_cpu_test.obj
-	@echo ... train_cpu_test.i
-	@echo ... train_cpu_test.s
+	@echo ... train_cpu.obj
+	@echo ... train_cpu.i
+	@echo ... train_cpu.s
 .PHONY : help
 
 

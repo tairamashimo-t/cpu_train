@@ -1,4 +1,4 @@
-C:/Pico/cpu_train/build/CMakeFiles/train_cpu_test.dir
+C:/Pico/cpu_train/build/CMakeFiles/train_cpu.dir
 C:/Pico/cpu_train/build/CMakeFiles/rebuild_cache.dir
 C:/Pico/cpu_train/build/CMakeFiles/ELF2UF2Build.dir
 C:/Pico/cpu_train/build/CMakeFiles/edit_cache.dir

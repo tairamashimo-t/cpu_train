@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 build/CMakeCache.txt
 build/train_cpu_test.elf
 build/train_cpu_test.elf.map
@@ -19,3 +20,8 @@ build/CMakeFiles/CMakeError.log
 build/CMakeFiles/CMakeOutput.log
 build/CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
 build/elf2uf2/CMakeFiles/CMakeOutput.log
+=======
+build/CMakeFiles/train_cpu_test.dir/depend.make
+build/CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
+build/CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj
+>>>>>>> work

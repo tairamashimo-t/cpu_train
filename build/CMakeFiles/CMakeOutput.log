@@ -3,9 +3,13 @@ The host system is: Windows - 10.0.19044 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.07/bin/arm-none-eabi-gcc.exe 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Build flags: ;-mcpu=cortex-m0plus;-mthumb
 =======
 Build flags: -mcpu=cortex-m0plus;-mthumb
+>>>>>>> work
+=======
+Build flags: ;-mcpu=cortex-m0plus;-mthumb
 >>>>>>> work
 Id flags: -c 
 
@@ -26,7 +30,11 @@ The C compiler identification is GNU, found in "C:/Pico/cpu_train/build/CMakeFil
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.07/bin/arm-none-eabi-g++.exe 
+<<<<<<< HEAD
 Build flags: -mcpu=cortex-m0plus;-mthumb
+>>>>>>> work
+=======
+Build flags: ;-mcpu=cortex-m0plus;-mthumb
 >>>>>>> work
 Id flags: -c 
 

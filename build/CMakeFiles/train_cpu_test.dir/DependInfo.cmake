@@ -141,7 +141,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c" "CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj" "gcc" "CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj.d"
   "C:/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c" "CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" "gcc" "CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj.d"
   "C:/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" "gcc" "CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
-  "C:/Pico/cpu_train/train_cpu_test.c" "CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj" "gcc" "CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj.d"
   "C:/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" "gcc" "CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d"
   )
 

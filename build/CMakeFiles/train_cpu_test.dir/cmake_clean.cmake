@@ -78,8 +78,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj.d"
   "CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
   "CMakeFiles/train_cpu_test.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
-  "CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj"
-  "CMakeFiles/train_cpu_test.dir/train_cpu_test.c.obj.d"
   "train_cpu_test.elf"
   "train_cpu_test.elf.manifest"
   "train_cpu_test.pdb"
