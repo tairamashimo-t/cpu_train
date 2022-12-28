@@ -52,7 +52,7 @@ CMAKE_BINARY_DIR = C:\Pico\cpu_train\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles\train_cpu_test.dir\all
+all: CMakeFiles\train_cpu.dir\all
 all: CMakeFiles\ELF2UF2Build.dir\all
 all: pico-sdk\all
 .PHONY : all
@@ -62,7 +62,7 @@ preinstall: pico-sdk\preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles\train_cpu_test.dir\clean
+clean: CMakeFiles\train_cpu.dir\clean
 clean: CMakeFiles\ELF2UF2Build.dir\clean
 clean: pico-sdk\clean
 .PHONY : clean
@@ -1365,31 +1365,31 @@ pico-sdk\tools\clean:
 .PHONY : pico-sdk\tools\clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/train_cpu_test.dir
+# Target rules for target CMakeFiles/train_cpu.dir
 
 # All Build rule for target.
-CMakeFiles\train_cpu_test.dir\all: CMakeFiles\ELF2UF2Build.dir\all
-CMakeFiles\train_cpu_test.dir\all: pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Pico\cpu_train\build\CMakeFiles --progress-num=24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70 "Built target train_cpu_test"
-.PHONY : CMakeFiles\train_cpu_test.dir\all
+CMakeFiles\train_cpu.dir\all: CMakeFiles\ELF2UF2Build.dir\all
+CMakeFiles\train_cpu.dir\all: pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Pico\cpu_train\build\CMakeFiles --progress-num=24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70 "Built target train_cpu"
+.PHONY : CMakeFiles\train_cpu.dir\all
 
 # Build rule for subdir invocation for target.
-CMakeFiles\train_cpu_test.dir\rule: cmake_check_build_system
+CMakeFiles\train_cpu.dir\rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Pico\cpu_train\build\CMakeFiles 59
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Pico\cpu_train\build\CMakeFiles 0
-.PHONY : CMakeFiles\train_cpu_test.dir\rule
+.PHONY : CMakeFiles\train_cpu.dir\rule
 
 # Convenience name for target.
-train_cpu_test: CMakeFiles\train_cpu_test.dir\rule
-.PHONY : train_cpu_test
+train_cpu: CMakeFiles\train_cpu.dir\rule
+.PHONY : train_cpu
 
 # clean rule for target.
-CMakeFiles\train_cpu_test.dir\clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu_test.dir\clean
-.PHONY : CMakeFiles\train_cpu_test.dir\clean
+CMakeFiles\train_cpu.dir\clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train_cpu.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\train_cpu.dir\clean
+.PHONY : CMakeFiles\train_cpu.dir\clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/ELF2UF2Build.dir
