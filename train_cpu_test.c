@@ -16,19 +16,19 @@ void check_input_start(void);
 void program_display(void);
 void store_command(void);
 void fetch(void);
-void decode(int* index_1, int* index_2, int* store, bool* flag);
+void decode(bool* flag);
 
-void mov(int* index, int* store);
-void sub(int* index_1, int* index_2);
-void mul(int* index_1, int* index_2);
-void cmp(int* index_1, int* index_2);
-void blt(int* store);
+void mov();
+void sub();
+void mul();
+void cmp();
+void blt();
 void end(bool* flag);
-void b(int* store);
-void out(int* index_1);
+void b();
+void out();
 
-void get_register_index(int* index, int n);
-void get_imediate(int* store_itob, int n);
+int get_register_index(int operand[2]);
+int get_imediate(int operand[2]);
 
 static int sProgram_counter = 0;
 static int sGeneral_register[5] = {0, 0, 0, 0, 0};
@@ -55,14 +55,8 @@ int main(){
     gpio_init(BOARD_LED);
     gpio_set_dir(BOARD_LED, GPIO_OUT);
 
-    int register_index_1 = 0;
-    int register_index_2 = 0;
-
     // プログラム終了フラグ
     bool end_flag = false;
-
-    // 2進数格納用
-    int store_itob = 0;
 
     // program_memory初期化
     /*入力自動化につきコメントアウト
@@ -77,7 +71,7 @@ int main(){
     program_display();
     while(!end_flag){
         fetch();
-        decode(&register_index_1, &register_index_2, &store_itob, &end_flag);
+        decode(&end_flag);
     }
 }
 
@@ -169,15 +163,11 @@ void fetch(void){
 
 }
 
-void get_register_index(int* index, int n){
-    int i, j;
-    if(n == 1){
-        i = sInstruction_register.oprand_1[0];
-        j = sInstruction_register.oprand_1[1];
-    }else if(n == 2){
-        i = sInstruction_register.oprand_2[0];
-        j = sInstruction_register.oprand_2[1];
-    }
+int get_register_index(int operand[2]){
+    int index = 0;
+    int i = operand[0];
+    int j = operand[1];
+    
     int binary[8] = {0, 0, 0, 0, 0, 0, 0, 0};
     int binary_index = 4;
     while(i != 0){
@@ -194,19 +184,15 @@ void get_register_index(int* index, int n){
     binary[7] = 0; //レジスタフラグ削除
     // レジスタのアドレス値10進数化
     for(int p = 0; p < 8; p++){
-        *index += (binary[p] * pow(2, p));
+        index += (binary[p] * pow(2, p));
     }
+    return index;
 }
 
- void get_imediate(int* store_itob, int n){
-    int i, j;
-    if(n == 1){
-        i = sInstruction_register.oprand_1[0];
-        j = sInstruction_register.oprand_1[1];
-    }else if(n == 2){
-        i = sInstruction_register.oprand_2[0];
-        j = sInstruction_register.oprand_2[1];
-    }
+ int get_imediate(int operand[2]){
+    int imediate = 0;
+    int i = operand[0];
+    int j = operand[1];
     int binary[8] = {0, 0, 0, 0, 0, 0, 0, 0};
     int binary_index = 4;
     while(i != 0){
@@ -222,70 +208,48 @@ void get_register_index(int* index, int n){
     }
     // imediate値の10進数化
     for(int p = 0; p < 8; p++){
-        *store_itob += (binary[p] * pow(2, p));
+        imediate += (binary[p] * pow(2, p));
     }
+    return imediate;
  }
 
- void mov(int* index, int* store){
-    // 必要であればindex、storeはここで宣言
+ void mov(){
     printf("mov..\n");
     printf("\tprogram_counter:%d\n", sProgram_counter);
-    // 第一引数の2進数化
-    get_register_index(index, 1);  //ここにオペランドを入れる。そうすれば第二引数の1はいらない。returnで返してもいい。
-    // 第二引数の2進数化
-    get_imediate(store, 2);
-    sGeneral_register[*index] = *store;
+    sGeneral_register[get_register_index(sInstruction_register.oprand_1)] = get_imediate(sInstruction_register.oprand_2);
     sProgram_counter += 3;
-    printf("\tregister[%d] = %d\n", *index, *store);
+    printf("\tregister[%d] = %d\n", get_register_index(sInstruction_register.oprand_1), get_imediate(sInstruction_register.oprand_2));
     printf("\tprogram_counter:%d\n", sProgram_counter);
     printf("mov done\n");
-    *store = 0;
-    *index = 0;
  }
 
- void sub(int* index_1, int* index_2){
+ void sub(){
     printf("sub..\n");
     printf("\tprogram_counter:%d\n", sProgram_counter);
-    // 第一引数の2進数化
-    get_register_index(index_1, 1);
-    // 第二引数の2進数化
-    get_register_index(index_2, 2);
-    sGeneral_register[*index_1] -= sGeneral_register[*index_2];
+    sGeneral_register[get_register_index(sInstruction_register.oprand_1)] -= sGeneral_register[get_register_index(sInstruction_register.oprand_2)];
     sProgram_counter += 3;
-    printf("\tregister[%d]%d -= register[%d]%d\n", *index_1, sGeneral_register[*index_1], *index_2, sGeneral_register[*index_2]);
+    printf("\tregister[%d]%d -= register[%d]%d\n", get_register_index(sInstruction_register.oprand_1), sGeneral_register[get_register_index(sInstruction_register.oprand_1)], get_register_index(sInstruction_register.oprand_2), sGeneral_register[get_register_index(sInstruction_register.oprand_2)]);
     printf("\tprogram_counter:%d\n", sProgram_counter);
     printf("sub done\n");
-    *index_1 = 0;
-    *index_2 = 0;
  }
 
- void mul(int* index_1, int* index_2){
+ void mul(){
     printf("sub..\n");
     printf("\tprogram_counter:%d\n", sProgram_counter);
-    // 第一引数の2進数化
-    get_register_index(index_1, 1);
-    // 第二引数の2進数化
-    get_register_index(index_2, 2);
-    sGeneral_register[*index_1] *= sGeneral_register[*index_2];
+    sGeneral_register[get_register_index(sInstruction_register.oprand_1)] *= sGeneral_register[get_register_index(sInstruction_register.oprand_2)];
     sProgram_counter += 3;
-    printf("\tregister[%d]%d *= register[%d]%d\n", *index_1, sGeneral_register[*index_1], *index_2, sGeneral_register[*index_2]);
+    printf("\tregister[%d]%d *= register[%d]%d\n", get_register_index(sInstruction_register.oprand_1), sGeneral_register[get_register_index(sInstruction_register.oprand_1)], get_register_index(sInstruction_register.oprand_2), sGeneral_register[get_register_index(sInstruction_register.oprand_2)]);
     printf("\tprogram_counter:%d\n", sProgram_counter);
     printf("sub done\n");
-    *index_1 = 0;
-    *index_2 = 0;
  }
 
- void cmp(int* index_1, int* index_2){
+ void cmp(){
     printf("cmp..\n");
     printf("\tprogram_counter:%d\n", sProgram_counter);
-    // 第一引数の2進数化
-    get_register_index(index_1, 1);
-    // 第二引数の2進数化
-    get_register_index(index_2, 2);
-    if((sGeneral_register[*index_1] - sGeneral_register[*index_2]) < 0){
+    if((sGeneral_register[get_register_index(sInstruction_register.oprand_1)] - sGeneral_register[get_register_index(sInstruction_register.oprand_2)]) < 0){
         sStatus_register[EQUAL_TO_FLAG] = 0;
         sStatus_register[LESS_THAN_FLAG] = 1;
-    }else if((sGeneral_register[*index_1] - sGeneral_register[*index_2]) == 0){
+    }else if((sGeneral_register[get_register_index(sInstruction_register.oprand_1)] - sGeneral_register[get_register_index(sInstruction_register.oprand_2)]) == 0){
         sStatus_register[EQUAL_TO_FLAG] = 1;
         sStatus_register[LESS_THAN_FLAG] = 0;
     }else{
@@ -293,26 +257,22 @@ void get_register_index(int* index, int n){
         sStatus_register[LESS_THAN_FLAG] = 0;
     }
     sProgram_counter += 3;
-    printf("\tregister[%d]%d - register[%d]%d\n", *index_1, sGeneral_register[*index_1], *index_2, sGeneral_register[*index_2]);
+    printf("\tregister[%d]%d - register[%d]%d\n", get_register_index(sInstruction_register.oprand_1), sGeneral_register[get_register_index(sInstruction_register.oprand_1)], get_register_index(sInstruction_register.oprand_2), sGeneral_register[get_register_index(sInstruction_register.oprand_2)]);
     printf("\tstatus_register%d%d\n", sStatus_register[EQUAL_TO_FLAG], sStatus_register[LESS_THAN_FLAG]);
     printf("\tprogram_counter:%d\n", sProgram_counter);
     printf("cmp done\n");
-    *index_1 = 0;
-    *index_2 = 0;
  }
 
- void blt(int* store){
+ void blt(){
     printf("blt..\n");
     printf("\tprogram_counter:%d\n", sProgram_counter);
-    get_imediate(store, 1);
     if(sStatus_register[LESS_THAN_FLAG] == 1){
-        sProgram_counter = *store;
+        sProgram_counter = get_imediate(sInstruction_register.oprand_1);
     }else{
         sProgram_counter += 2;
     }
     printf("\tprogram_counter:%d\n", sProgram_counter);
     printf("blt done\n");
-    *store = 0;
  }
 
  void end(bool* flag){
@@ -321,61 +281,57 @@ void get_register_index(int* index, int n){
     printf("end done\n");
  }
 
- void b(int* store){
+ void b(){
     printf("b..\n");
     printf("\tprogram_counter:%d\n", sProgram_counter);
-    get_imediate(store, 1);
-    sProgram_counter = *store;
+    sProgram_counter = get_imediate(sInstruction_register.oprand_1);
     printf("\tprogram_counter:%d\n", sProgram_counter);
     printf("b done\n");
-    *store = 0;
  }
 
- void out(int* index_1){
+ void out(){
     printf("out..\n");
     printf("\tprogram_counter:%d\n", sProgram_counter);
-    get_register_index(index_1, 1);
     char ans[5]; 
-    sprintf(ans, "%d", sGeneral_register[*index_1]);
+    sprintf(ans, "%d", sGeneral_register[get_register_index(sInstruction_register.oprand_1)]);
     uart_puts(UART_ID, ans);
     uart_puts(UART_ID, "\n\r");
     sProgram_counter += 2;
     printf("\tprogram_counter:%d\n", sProgram_counter);
     printf("out done\n");
-    *index_1 = 0;
  }
 
- void decode(int* index_1, int* index_2, int* store, bool* flag){
+ void decode(bool* flag){
     switch (sInstruction_register.opcode[1]){
         case 0:
-            mov(index_1, store);
+            mov();
             break;
         case 1: //add // 未使用
 
             break;
         case 2:
-            sub(index_1, index_2);
+            sub();
             break;
         case 3:
-            mul(index_1, index_2);
+            mul();
             break;
         case 4:
-            cmp(index_1, index_2);
+            cmp();
             break;
         case 5: //bne // 未使用
             
             break;
         case 6:
-            blt(store);
+            blt();
             break;
         case 7:
             end(flag);
             break;
         case 8:
-            b(store);
+            b();
             break;
         case 9:
-            out(index_1);
+            out();
             break;
     }
  }
